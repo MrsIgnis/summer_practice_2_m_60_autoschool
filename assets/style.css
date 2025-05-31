@@ -1,0 +1,65 @@
+body {
+    width: 100%;
+    overflow-x: visible;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------------------------------------- */
+/* Header - Шапка */
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 14px;
+}
+
+.contacts_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_net_header {
+    display: flex;
+    justify-content: space-between;
+}
