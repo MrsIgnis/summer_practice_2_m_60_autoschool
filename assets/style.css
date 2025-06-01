@@ -1,6 +1,11 @@
 body {
     width: 100%;
     overflow-x: visible;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-weight: 500;
+    color: #252533;
+    background-color: #F5F5F7;
 }
 
 *,
@@ -20,15 +25,40 @@ h6 {
     margin: 0;
 }
 
+.title_num_font {
+    font-family: 'Wix Madefor Display';
+}
+
 a {
     text-decoration: none;
+    color: #252533;
+}
+
+img {
+    display: block;
 }
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.btn_txt {
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F7F5F5;
+}
+
+.btn_form {
+    display: inline-block;
+    padding: 17px 44px;
+    background-color: #F94C23;
+    border-radius: 16px;
+    border: transparent;
+    cursor: pointer;
 }
 
 /* ------------------------------------------- */
@@ -40,6 +70,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: #F5F5F7;
 }
 
 .header_inner {
@@ -51,15 +82,150 @@ header {
 
 .nav {
     display: flex;
-    gap: 14px;
+    gap: 28px;
+    align-items: center;
+    line-height: 1.2;
 }
 
 .contacts_header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.num_header {
+    font-weight: 600;
 }
 
 .social_net_header {
     display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ------------------------------------------- */
+/* Hero - Приветственный экран */
+
+#hero {
+    padding-top: 52px;
+    padding-bottom: 40px;
+    border-left: 40px;
+    border-right: 40px;
+    box-shadow: 0 10px 20px -10px #0d0b1a14;
+}
+
+.hero_title {
+    position: relative;
+}
+
+.hero_title::after {
+    content: url('/assets/img/hero/hero_img.svg');
+    position: absolute;
+    display: inline-block;
+    left: 28.5%;
+    top: -50%;
+}
+
+.hero_subtitle {
+    position: relative;
+    display: inline-block;
+    font-family: 'Wendy One', 'Mulish';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+.hero_subtitle::after {
+    content: url('/assets/img/hero/line_subtitle.svg');
+    position: absolute;
+    display: inline-block;
+    left: 45%;
+    top: 30%;
+}
+
+.hero_text {
+    margin-top: 199px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.hero_button {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.hero_cost_orange {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 24px;
+    color: #F94C23;
+}
+
+.hero_cost_text {
+    font-size: 14px;
+}
+
+.hero_advantages {
+    position: relative;
+    display: flex;
     justify-content: space-between;
+    padding: 0 32px;
+    gap: 64px;
+    margin-top: 80px;
+}
+
+.hero_adv_items {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.hero_adv_items:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: #25253352;
+}
+
+.hero_advantages::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: #25253352;
+}
+
+.hero_advantages::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: #25253352;
+}
+
+.hero_adv_item_1 {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.hero_adv_item_2 {
+    font-family: 'Mulish';
+    font-weight: 400;
+    line-height: 1.4;
 }
