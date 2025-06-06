@@ -873,7 +873,8 @@ header {
     margin-left: 240px;
 }
 
-.instructors_swiper {
+.instructors_swiper,
+.reviews_swiper {
     overflow: visible;
     position: relative;
 }
@@ -905,7 +906,7 @@ header {
     cursor: not-allowed;
 }
 
-.swiper-slide {
+.instructors_swiper .swiper-slide {
     display: flex;
     justify-content: space-between;
     padding: 16px 24px 16px 16px;
@@ -983,8 +984,8 @@ header {
 /* stages - блок "Этапы" */
 
 #stages {
-    padding-bottom: 80px;
     position: relative;
+    min-height: 782px;
 }
 
 .stages_title {
@@ -1022,6 +1023,12 @@ header {
     top: -40%;
 }
 
+.stages_items_block {
+    position: relative;
+    min-height: 603px;
+    min-width: 1440px;
+}
+
 .stages_items {
     position: absolute;
     display: flex;
@@ -1054,42 +1061,291 @@ header {
     line-height: 1.4;
 }
 
-.stages_items:nth-child(2) {
-    top: 335px;
-    left: 90px;
+.stages_items:nth-child(1) {
+    top: 27%;
 }
 
-.stages_item:nth-child(2) {
-    max-width: 360px;
+.stages_items:nth-child(2) {
+    top: 65%;
+    left: 15%;
 }
 
 .stages_items:nth-child(3) {
-    top: 560px;
-    left: 310px;
+    top: 37%;
+    left: 38%;
 }
 
 .stages_items:nth-child(4) {
-    top: 400px;
-    left: 630px;
+    top: 75%;
+    left: 58%;
 }
 
 .stages_items:nth-child(5) {
-    top: 635px;
-    left: 935px;
-}
-
-.stages_items:nth-child(6) {
-    top: 220px;
-    left: 995px;
-}
-
-.stages_items:nth-child(3) .stages_item,
-.stages_items:nth-child(4) .stages_item {
-    max-width: 380px;
+    top: 10%;
+    left: 63%;
 }
 
 .stages_items:nth-child(2) .stages_item,
-.stages_items:nth-child(5) .stages_item,
-.stages_items:nth-child(6) .stages_item {
+.stages_items:nth-child(3) .stages_item {
+    max-width: 380px;
+}
+
+.stages_items:nth-child(1) .stages_item,
+.stages_items:nth-child(4) .stages_item,
+.stages_items:nth-child(5) .stages_item {
     max-width: 360px;
+}
+
+/* ------------------------------------------- */
+/* reviews - блок "Отзывы" */
+
+#reviews {
+    margin-top: 80px;
+    padding-top: 100px;
+    background-color: #F5F5F7;
+    border-radius: 40px;
+    box-shadow: 0px 8px 80px 0px #0D0B1A14;
+    position: relative;
+}
+
+.reviews_top {
+    margin-bottom: 100px;
+}
+
+.reviews_title {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 44px;
+}
+
+.reviews_title_row,
+.reviews_title_row_2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_title_row_2 {
+    align-items: center;
+}
+
+.reviews_title_row>p:first-child {
+    font-family: 'Wix Madefor Display';
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.reviews_title_row p span:first-child,
+.reviews_title_row_2 p span {
+    color: #F94C23;
+}
+
+.reviews_title_row_2 p span {
+    font-weight: 700;
+}
+
+.reviews_title_row_2 p:first-child {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.reviews_services {
+    display: flex;
+    gap: 24px;
+}
+
+.reviews_services_items {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.reviews_services_icon {
+    background-color: #FFFCFC;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.serv_icn_1 {
+    padding: 11px 13px;
+}
+
+.serv_icn_2 {
+    padding: 11px 12px;
+}
+
+.serv_icn_3 {
+    padding: 11px;
+}
+
+.reviews_services_mark {
+    display: flex;
+    gap: 6px;
+}
+
+.reviews_services_mark p {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.reviews_services_mark img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.reviews_navigation {
+    display: flex;
+    gap: 12px;
+}
+
+.reviews_button_prev,
+.reviews_button_next {
+    border-radius: 8px;
+    background-color: #F94C231A;
+    padding: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.reviews_button_prev.swiper-button-disabled,
+.reviews_button_next.swiper-button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.reviews_swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    padding: 24px 32px;
+    background-color: #FFFCFC;
+    border-radius: 16px;
+    max-width: 427px;
+}
+
+.reviews_person {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.reviews_person_name {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    line-height: 1;
+    align-items: center;
+}
+
+.reviews_person_name>p {
+    font-size: 20px;
+}
+
+.person_mark>p {
+    font-size: 16px;
+}
+
+.person_mark {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.person_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #252533CC;
+}
+
+.person_text span {
+    font-weight: 500;
+    color: #F94C23;
+}
+
+.reviews_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews_date>p {
+    color: #25253399;
+    line-height: 1.1;
+}
+
+.reviews_bottom>p {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.reviews_video_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 44px;
+}
+
+.reviews_video_column {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.reviews_video_item {
+    position: relative;
+}
+
+.reviews_video_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.reviews_video_item::after {
+    content: url('/assets/img/reviews/play_icon.svg');
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+    left: 40%;
+}
+
+.reviews_video_time {
+    display: flex;
+    gap: 2px;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+}
+
+.reviews_video_time>p {
+    font-family: 'Wix Madefor Display';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #FFFCFC;
+}
+
+.reviews_video_name {
+    background-color: #FFFCFC;
+    border-radius: 14px;
+    padding: 7px 12px;
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    width: fit-content;
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
 }
