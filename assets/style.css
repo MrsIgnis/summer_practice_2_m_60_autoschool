@@ -328,7 +328,7 @@ header {
     background-color: #F94C23;
     padding: 19px 216px;
     margin-top: 16px;
-} 
+}
 
 .btn_right {
     background-color: #F94C231A;
@@ -369,4 +369,727 @@ header {
     display: inline-block;
     margin-left: -1em;
     vertical-align: middle;
+}
+
+/* ------------------------------------------- */
+/* add_services - блок "Дополнительные услуги" */
+
+#add_services {
+    padding-bottom: 100px;
+}
+
+.add_serv_inner {
+    display: flex;
+    gap: 223px;
+}
+
+.add_serv_column {
+    min-width: 447px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.add_serv_title {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.add_serv_title_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.add_serv_title_2::after {
+    content: url('/assets/img/add_services/line_title.svg');
+    position: absolute;
+    display: inline-block;
+    top: 70%;
+}
+
+.add_serv_card {
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+    background-color: #FFFCFC;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.add_serv_card:hover {
+    transform: scale(1.05);
+}
+
+.add_serv_card_column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.add_serv_desc {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.add_serv_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.add_serv_cost {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.add_serv_duration {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.btn_add_serv {
+    border: 2px solid #F94C23;
+    color: #F94C23;
+    background-color: transparent;
+    padding: 18px 54px;
+    white-space: nowrap;
+}
+
+/* ------------------------------------------- */
+/* add_services - блок "Преимущества" */
+
+#advantages {
+    background-color: #F5F5F7;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0px 8px 80px 0px #0D0B1A14;
+}
+
+.advantages_title {
+    font-family: 'Wix Madefor Display';
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    max-width: 919px;
+    margin-bottom: 80px;
+}
+
+.advantages_title span {
+    color: #F94C23;
+}
+
+.advantages_title_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages_title_2 p:first-child {
+    margin-left: 100px;
+}
+
+.advantages_title_2 p:last-child {
+    margin-left: 345px;
+}
+
+.advantages_title_2::after {
+    content: url('/assets/img/advantages/line_title.svg');
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 25%;
+}
+
+.adv_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adv_row {
+    display: flex;
+    gap: 20px;
+}
+
+.adv_item_small {
+    background-color: #FFFCFC;
+    padding: 28px 28px 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 315px;
+}
+
+.adv_item_small>p {
+    color: #252533CC;
+}
+
+.adv_item_small_gap_1 {
+    gap: 46px;
+}
+
+.adv_item_small_gap_2 {
+    gap: 72px;
+}
+
+.adv_item_big {
+    position: relative;
+    padding: 28px;
+    background-color: #FFFCFC;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+}
+
+.adv_item_big::before {
+    content: "";
+    position: absolute;
+    top: 65%;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    background-color: #F5F5F7;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: 16px 0 0 0 #F5F5F7;
+}
+
+.adv_item_big::after {
+    content: "";
+    position: absolute;
+    top: 65%;
+    right: 100%;
+    width: 32px;
+    height: 32px;
+    background-color: #F5F5F7;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: 16px 0 0 0 #F5F5F7;
+}
+
+.item_big_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.big_title {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.big_subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #25253399;
+}
+
+.adv_item_small p {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.small_top p {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-top: 16px;
+}
+
+.item_big_1>p {
+    line-height: 1.4;
+}
+
+.big_title span {
+    color: #F94C23;
+}
+
+.item_big_2 {
+    display: flex;
+    gap: 178px;
+    padding-top: 24px;
+    border-top: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(90deg,
+            #25253326,
+            #25253326 10px,
+            transparent 5px,
+            transparent 15px) 1;
+}
+
+.big_2_2 {
+    padding: 12px 20px;
+    background-color: #F94C231A;
+    color: #F94C23E5;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.btn_big_adv {
+    border: 2px solid #F94C23;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: #F94C23;
+    border-radius: 8px;
+}
+
+.adv_item_video {
+    position: relative;
+    display: flex;
+    gap: 38px;
+    background-color: #FFFCFC;
+    border-radius: 16px;
+}
+
+.adv_item_video::after {
+    content: url('/assets/img/advantages/play_icon.svg');
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+    left: 44%;
+}
+
+.adv_video_title {
+    margin: 24px 0 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 106px;
+}
+
+.adv_video_title p:first-child {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.adv_video_title p:last-child {
+    font-weight: 400;
+    line-height: 1.4;
+    color: #252533CC;
+}
+
+/* ------------------------------------------- */
+/* about_us - блок "О нас" */
+
+#about_us {
+    padding-bottom: 100px;
+    background-color: #F5F5F7;
+    border-radius: 0 0 40px 40px;
+}
+
+.about_us_title {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-family: 'Wix Madefor Display';
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about_us_title p:last-child {
+    margin-right: 120px;
+}
+
+.about_us_inner {
+    display: flex;
+    gap: 40px;
+}
+
+.about_us_column {
+    flex: 1;
+}
+
+.about_us_column:last-child {
+    margin-top: 67px;
+}
+
+.about_us_column>p {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.about_us_column p span {
+    color: #F94C23;
+}
+
+.about_us_text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.about_us_advantages {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    gap: 64px;
+}
+
+.about_us_adv_items {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.about_us_column:last-child {
+    position: relative;
+}
+
+.about_us_column:last-child::after {
+    content: url('/assets/img/about_us/line_adv_item.svg');
+    position: absolute;
+    display: inline-block;
+    top: -23%;
+}
+
+.about_us_adv_items:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: #25253352;
+}
+
+.about_us_advantages::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: #25253352;
+}
+
+.about_us_advantages::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: #25253352;
+}
+
+.about_us_adv_item_1 {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.about_us_adv_item_2 {
+    font-family: 'Mulish';
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.about_us_row:first-child {
+    margin-bottom: 32px;
+}
+
+.about_us_bottom {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+.about_us_bottom p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.about_us_bottom p span {
+    color: #F94C23;
+}
+
+.about_us_btn {
+    padding: 19px 236px;
+    border: 2px solid #F94C23;
+    background-color: transparent;
+    color: #F94C23;
+    white-space: nowrap;
+}
+
+/* ------------------------------------------- */
+/* instructors - блок "Инструкторы" */
+
+#instructors {
+    padding-bottom: 100px;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 10px 20px -10px #0d0b1a14;
+    background-color: #F5F5F7;
+    margin-bottom: 80px;
+}
+
+.instructors_title {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Wix Madefor Display';
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.instructors_title p:last-child {
+    margin-left: 240px;
+}
+
+.instructors_swiper {
+    overflow: visible;
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: max-content;
+}
+
+.instructions_navigation {
+    position: absolute;
+    top: -43%;
+    right: 0;
+    display: flex;
+    gap: 12px;
+}
+
+.instructions_button_prev,
+.instructions_button_next {
+    border-radius: 8px;
+    background-color: #F94C231A;
+    padding: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.instructions_button_prev.swiper-button-disabled,
+.instructions_button_next.swiper-button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 16px 16px;
+    background-color: #FFFCFC;
+    border-radius: 20px;
+    max-width: 650px;
+}
+
+.photo_instructor {
+    padding-right: 20px;
+}
+
+.about_instructor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    padding-left: 20px;
+}
+
+.about_instructor::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: repeating-linear-gradient(180deg,
+            #DEDEE6,
+            #DEDEE6 6px,
+            transparent 6px,
+            transparent 18px);
+}
+
+.about_instructor_row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about_instructor>p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #252533E5;
+}
+
+.instructor_row_1 p:first-child {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.instructor_row_1 p:last-child {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.instructor_row_2 {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #F94C23;
+    color: #FFFCFC;
+    padding: 6px 13px;
+    border-radius: 18px;
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------------- */
+/* stages - блок "Этапы" */
+
+#stages {
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.stages_title {
+    font-family: 'Wix Madefor Display';
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.stages_title:after {
+    content: url('/assets/img/stages/back_line.svg');
+    position: absolute;
+    display: inline-block;
+    right: -5%;
+    top: 110%;
+}
+
+.stages_title p:first-child {
+    margin-left: 320px;
+}
+
+.stages_title p:last-child {
+    position: relative;
+    word-spacing: 75px;
+    margin-left: 357px;
+}
+
+.stages_title p:last-child::after {
+    content: url('/assets/img/stages/number.svg');
+    position: absolute;
+    display: inline-block;
+    left: 19%;
+    top: -40%;
+}
+
+.stages_items {
+    position: absolute;
+    display: flex;
+    gap: 32px;
+}
+
+.stages_items>p {
+    color: #F94C23;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.stages_item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stages_item p:first-child {
+    font-family: 'Wix Madefor Display';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.stages_item p:last-child {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.stages_items:nth-child(2) {
+    top: 335px;
+    left: 90px;
+}
+
+.stages_item:nth-child(2) {
+    max-width: 360px;
+}
+
+.stages_items:nth-child(3) {
+    top: 560px;
+    left: 310px;
+}
+
+.stages_items:nth-child(4) {
+    top: 400px;
+    left: 630px;
+}
+
+.stages_items:nth-child(5) {
+    top: 635px;
+    left: 935px;
+}
+
+.stages_items:nth-child(6) {
+    top: 220px;
+    left: 995px;
+}
+
+.stages_items:nth-child(3) .stages_item,
+.stages_items:nth-child(4) .stages_item {
+    max-width: 380px;
+}
+
+.stages_items:nth-child(2) .stages_item,
+.stages_items:nth-child(5) .stages_item,
+.stages_items:nth-child(6) .stages_item {
+    max-width: 360px;
 }
