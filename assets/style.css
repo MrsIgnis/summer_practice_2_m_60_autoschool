@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    overflow-x: visible;
+    overflow-x: hidden;
     font-family: 'Mulish';
     font-size: 16px;
     font-weight: 500;
@@ -1106,6 +1106,7 @@ header {
     border-radius: 40px;
     box-shadow: 0px 8px 80px 0px #0D0B1A14;
     position: relative;
+    padding-bottom: 100px;
 }
 
 .reviews_top {
@@ -1348,4 +1349,147 @@ header {
     position: absolute;
     bottom: 14px;
     left: 16px;
+}
+
+/* ------------------------------------------- */
+/* contacts - блок "Контакты" */
+
+#contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contacts_inner {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts_block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts_form {
+    background-color: #FFFCFC;
+    border-radius: 24px;
+    padding: 32px 32px 36px;
+    box-shadow: 0px 8px 80px 0px #0D0B1A14;
+}
+
+.contacts_title {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.contacts_title > p:first-child {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.contacts_title > p:last-child {
+    line-height: 1.4;
+    color: #252533CC;
+}
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.form_dropdown {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form_contacts input::placeholder {
+    color: #25253399;
+}
+
+#form_contacts input,
+.form_dropdown {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F5F5F7;
+    padding: 18px 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 16px;
+    border-color: transparent;
+    font-family: 'Mulish';
+}
+
+#form_contacts input,
+textarea:focus {
+    outline: none;
+}
+
+.form_btn {
+    padding: 18px 219px;
+    margin-bottom: 10px;
+}
+
+.form_condition {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    color: #25253399;
+}
+
+.form_condition span {
+    color: #F94C23;
+}
+
+.contacts_info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    background-color: #FFFCFC;
+    border-radius: 24px;
+    box-shadow: 0px 8px 80px 0px #0D0B1A14;
+}
+
+.contacts_address,
+.contacts_phones_text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contacts_address > p:first-child,
+.contacts_phones_text > p:first-child {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.contacts_address > p:last-child,
+.contacts_phones_text > p:last-child {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.contacts_address > p span:last-child,
+.contacts_phones_text > p:last-child {
+    color: #F94C23;
+}
+
+.contacts_phones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_phones_serv {
+    display: flex;
+    gap: 12px;
 }
