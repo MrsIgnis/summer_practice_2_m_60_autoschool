@@ -1384,14 +1384,14 @@ header {
     margin-bottom: 28px;
 }
 
-.contacts_title > p:first-child {
+.contacts_title>p:first-child {
     font-family: 'Wix Madefor Display';
     font-weight: 600;
     font-size: 36px;
     text-transform: uppercase;
 }
 
-.contacts_title > p:last-child {
+.contacts_title>p:last-child {
     line-height: 1.4;
     color: #252533CC;
 }
@@ -1465,22 +1465,22 @@ textarea:focus {
     gap: 6px;
 }
 
-.contacts_address > p:first-child,
-.contacts_phones_text > p:first-child {
+.contacts_address>p:first-child,
+.contacts_phones_text>p:first-child {
     font-family: 'Wix Madefor Display';
     font-weight: 600;
     font-size: 20px;
     line-height: 1.1;
 }
 
-.contacts_address > p:last-child,
-.contacts_phones_text > p:last-child {
+.contacts_address>p:last-child,
+.contacts_phones_text>p:last-child {
     font-size: 14px;
     line-height: 1;
 }
 
-.contacts_address > p span:last-child,
-.contacts_phones_text > p:last-child {
+.contacts_address>p span:last-child,
+.contacts_phones_text>p:last-child {
     color: #F94C23;
 }
 
@@ -1492,4 +1492,110 @@ textarea:focus {
 .contacts_phones_serv {
     display: flex;
     gap: 12px;
+}
+
+/* ------------------------------------------- */
+/* faq - блок "Часто задаваемые вопросы" */
+
+#faq {
+    padding-bottom: 100px;
+}
+
+.faq_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.faq_title {
+    text-align: center;
+}
+
+.faq_title>p:nth-child(1) {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.faq_title>p:nth-child(2),
+.faq_title>p:nth-child(3) {
+    font-family: 'Wix Madefor Display';
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.faq_title>p:nth-child(2) {
+    margin-bottom: 4px;
+}
+
+.faq_accordion {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.faq_accordion_column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #FFFCFC;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: margin-bottom 0.3s ease-out;
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    background-color: #FFFCFC;
+    border: none;
+    padding: 24px 32px 0;
+    font-size: 24px;
+    font-family: 'Wix Madefor Display';
+    color: #F94C23;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.accordion-header .title {
+    flex-grow: 1;
+}
+
+.accordion-header .circle {
+    transition: transform 0.3s ease-out;
+}
+
+.accordion-header.rotated .circle {
+    transform: rotate(135deg);
+}
+
+.accordion-header.rotated {
+    margin-bottom: 12px;
+}
+
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    padding: 0 68px 24px 32px;
+    line-height: 1.4;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    will-change: max-height, opacity;
+}
+
+.accordion-content.show {
+    opacity: 1;
 }
