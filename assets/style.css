@@ -1661,7 +1661,7 @@ footer {
     line-height: 1;
 }
 
-.footer_rev_item>p {
+.footer_rev_item > p {
     font-family: 'Wix Madefor Display';
     font-weight: 600;
     font-size: 14px;
