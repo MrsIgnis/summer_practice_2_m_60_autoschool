@@ -67,6 +67,7 @@ header {
     right: 0;
     z-index: 1000;
     background-color: #F5F5F7;
+    border-radius: 0 0 40px 40px;
 }
 
 .header_inner {
@@ -1598,4 +1599,122 @@ textarea:focus {
 
 .accordion-content.show {
     opacity: 1;
+}
+
+/* ------------------------------------------- */
+/* footer - Подвал */
+
+footer {
+    background-color: #F5F5F7;
+    box-shadow: 0px 8px 80px 0px #0D0B1A14;
+    border-radius: 40px 40px 0 0;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 40px;
+}
+
+.num_footer {
+    font-weight: 600;
+}
+
+.footer_middle {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer_rev {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_rev_item {
+    background-color: #FFFCFC;
+    border-radius: 16px;
+    padding: 18px 33px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer_mark {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.footer_mark p {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.footer_rev_item>p {
+    font-family: 'Wix Madefor Display';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #25253366;
+}
+
+.contacts_info_footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 20px 24px;
+    background-color: #FFFCFC;
+    border-radius: 24px;
+    box-shadow: 0px 8px 80px 0px #0D0B1A14;
+}
+
+.footer_buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_btn_1 {
+    padding: 19px 85px;
+}
+
+.footer_btn_2 {
+    padding: 19px 81px;
+    border: 2px solid #F94C23;
+    background-color: transparent;
+    color: #F94C23;
+}
+
+.footer_info {
+    margin-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    border-top: 1.5px solid #2525331F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-weight: 600;
+    font-size: 12px;
+    color: #2525334D;
+}
+
+.politic_block {
+    display: flex;
+    gap: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #25253366;
 }
