@@ -115,7 +115,7 @@ header {
 }
 
 .hero_title::after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/hero/hero_img.svg');
+    content: url('img/hero/hero_img.svg');
     position: absolute;
     display: inline-block;
     left: 28.5%;
