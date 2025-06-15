@@ -134,7 +134,7 @@ header {
 }
 
 .hero_subtitle::after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/hero/line_subtitle.svg');
+    content: url('img/hero/line_subtitle.svg');
     position: absolute;
     display: inline-block;
     left: 45%;
@@ -366,7 +366,7 @@ header {
 }
 
 .adv_list li::before {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/services/nav_element.svg');
+    content: url('img/services/nav_element.svg');
     display: inline-block;
     margin-left: -1em;
     vertical-align: middle;
@@ -407,7 +407,7 @@ header {
 }
 
 .add_serv_title_2::after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/add_services/line_title.svg');
+    content: url('img/add_services/line_title.svg');
     position: absolute;
     display: inline-block;
     top: 70%;
@@ -504,7 +504,7 @@ header {
 }
 
 .advantages_title_2::after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/advantages/line_title.svg');
+    content: url('img/advantages/line_title.svg');
     position: absolute;
     display: inline-block;
     top: 65%;
@@ -663,7 +663,7 @@ header {
 }
 
 .adv_item_video::after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/advantages/play_icon.svg');
+    content: url('img/advantages/play_icon.svg');
     position: absolute;
     display: inline-block;
     top: 35%;
@@ -999,7 +999,7 @@ header {
 }
 
 .stages_title:after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/stages/back_line.svg');
+    content: url('img/stages/back_line.svg');
     position: absolute;
     display: inline-block;
     right: -5%;
@@ -1017,7 +1017,7 @@ header {
 }
 
 .stages_title p:last-child::after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/stages/number.svg');
+    content: url('img/stages/number.svg');
     position: absolute;
     display: inline-block;
     left: 19%;
@@ -1315,7 +1315,7 @@ header {
 }
 
 .reviews_video_item::after {
-    content: url('/summer_practice_2_m_60_autoschool/assets/img/reviews/play_icon.svg');
+    content: url('img/reviews/play_icon.svg');
     position: absolute;
     display: inline-block;
     top: 35%;
