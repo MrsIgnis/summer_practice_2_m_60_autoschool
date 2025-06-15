@@ -768,7 +768,7 @@ header {
 }
 
 .about_us_column:last-child::after {
-    content: url('assets/img/about_us/line_adv_item.svg');
+    content: url('img/about_us/line_adv_item.svg');
     position: absolute;
     display: inline-block;
     top: -23%;
