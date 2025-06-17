@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     let cards = gsap.utils.toArray(".stackCard");
-
     let stickDistance = 0;
+    let verticalOffset = 30;
 
     let firstCardST = ScrollTrigger.create({
         trigger: cards[0],
@@ -15,13 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     cards.forEach((card, index) => {
-
+        let offset = index * verticalOffset;
+        
         var scale = 1 - (cards.length - index) * 0.025;
-        let scaleDown = gsap.to(card, { scale: scale, 'transform-origin': '"50% ' + (lastCardST.start + stickDistance) + '"' });
+        
+        let scaleDown = gsap.to(card, { 
+            scale: scale, 
+            y: offset,
+            'transform-origin': 'center center'
+        });
 
         ScrollTrigger.create({
             trigger: card,
-            start: "center center",
+            start: "center center+=40px",
             end: () => lastCardST.start + stickDistance,
             pin: true,
             pinSpacing: false,
@@ -30,5 +35,4 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleActions: "restart none none reverse"
         });
     });
-
 });
