@@ -22,16 +22,59 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Wix Madefor Display';
     margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+h1 {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 32px;
+}
+
+h1::after {
+    content: url('img/hero/line_subtitle.svg');
+    position: absolute;
+    display: inline-block;
+    left: 12%;
+    top: 30%;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 52px;
 }
 
 .title_num_font {
     font-family: 'Wix Madefor Display';
 }
 
+.supertitle {
+    font-family: 'Mulish';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+
+.add_serv_supertitle {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
 a {
     text-decoration: none;
     color: #252533;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #9E1D21;
 }
 
 img {
@@ -54,7 +97,41 @@ img {
     font-size: 18px;
     font-weight: 600;
     color: #F7F5F5;
-    background-color: #F94C23;
+    background-color: #9E1D21;
+    transition: background-color 0.2s;
+}
+
+.btn_form:hover {
+    background-color: #B82C30;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-44 {
+    font-size: 44px;
+}
+
+.df-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.df-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.accent-color {
+    background-color: #9E1D21 !important;
+    color: #FFFCFC;
 }
 
 /* ------------------------------------------- */
@@ -67,14 +144,18 @@ header {
     right: 0;
     z-index: 1000;
     background-color: #F5F5F7;
-    border-radius: 0 0 40px 40px;
+    transition: box-shadow 0.2s;
+}
+
+header.header--scrolled {
+    box-shadow: 0px 8px 80px 0px #0D0B1A14;
 }
 
 .header_inner {
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .nav {
@@ -103,8 +184,15 @@ header {
 /* ------------------------------------------- */
 /* hero - Приветственный экран */
 
+.hero-anim-group-1,
+.hero-anim-group-2,
+.hero-anim-group-3 {
+    opacity: 0;
+    transform: translateY(30px); /* Можешь поменять значение для более сильного/слабого "подъема" */
+}
+
 #hero {
-    padding-top: 52px;
+    padding-top: 32px;
     padding-bottom: 40px;
     border-radius: 0 0 40px 40px;
     box-shadow: 0 10px 20px -10px #0d0b1a14;
@@ -114,12 +202,45 @@ header {
     position: relative;
 }
 
-.hero_title::after {
-    content: url('img/hero/hero_img.svg');
+.hero-car, .hero-cone {
+    opacity: 0;
+}
+
+/* Контейнер для всей композиции с машиной и конусами */
+.hero-image-composition {
     position: absolute;
-    display: inline-block;
-    left: 28.5%;
-    top: -50%;
+    top: 200px; /* Подберите точные значения, чтобы соответствовать макету */
+    left: 520px;
+    right: 0;
+    margin: 0 auto; /* Центрируем контейнер */
+    width: 800px; /* Примерная ширина композиции */
+    height: 400px; /* Примерная высота */
+    z-index: 1; /* Убираем картинки за текст */
+    pointer-events: none; /* Чтобы картинки не мешали кликать на текст/кнопки */
+}
+
+/* Стили для каждой картинки внутри композиции */
+.hero-image-composition img {
+    position: absolute;
+}
+
+.hero-car {
+    /* Позиция машины - она будет в центре композиции */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hero-cone-1 {
+    /* Позиция первого конуса (слева) */
+    top: 0px;
+    left: -145px;
+}
+
+#hero-cone-2 {
+    /* Позиция второго конуса (справа) */
+    top: 180px;
+    right: -55px;
 }
 
 .hero_subtitle {
@@ -161,7 +282,7 @@ header {
     font-family: 'Wix Madefor Display';
     font-weight: 700;
     font-size: 24px;
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .hero_cost_text {
@@ -235,17 +356,12 @@ header {
 
 #services {
     padding-top: 71px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     overflow: hidden;
 }
 
 .serv_title {
     text-align: center;
-    font-family: 'Wix Madefor Display';
-    font-weight: 800;
-    font-size: 52px;
-    line-height: 1.1;
-    text-transform: uppercase;
     margin-bottom: 71px;
 }
 
@@ -256,6 +372,7 @@ header {
     border-radius: 32px;
     box-shadow: 0px 8px 80px 0px #0D0B1A14;
     padding: 52px 60px;
+    margin-bottom: 10px;
 }
 
 .stackCard_col {
@@ -288,7 +405,7 @@ header {
 }
 
 .category {
-    background-color: #F94C23;
+    background-color: #9E1D21;
     border-radius: 18px;
     padding: 9px 13px;
     color: #FFFCFC;
@@ -306,9 +423,8 @@ header {
     line-height: 1.4;
 }
 
-
 .date span {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .card_bottom {
@@ -326,15 +442,20 @@ header {
 }
 
 .btn_left {
-    background-color: #F94C23;
+    background-color: #9E1D21;
     padding: 19px 216px;
     margin-top: 16px;
 }
 
 .btn_right {
-    background-color: #F94C231A;
-    color: #F94C23;
+    margin-top: 49px;
+    background-color: #9E1D211A;
+    color: #9E1D21;
     padding: 19px 166px;
+}
+
+.btn_right:hover {
+    background-color: #E2BABB;
 }
 
 .info_block {
@@ -351,25 +472,27 @@ header {
 .info_list,
 .adv_list {
     list-style: none;
-    padding-left: 0;
     display: flex;
     flex-direction: column;
+}
+
+.info_list {
     gap: 10px;
 }
 
-.info_list li::before {
-    content: "•";
+.adv_list {
+    gap: 18px;
+}
+
+.info_list span {
     color: #9E1D21;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
 }
 
 .adv_list li::before {
     content: url('img/services/nav_element.svg');
     display: inline-block;
-    margin-left: -1em;
     vertical-align: middle;
+    margin-right: 8px;
 }
 
 /* ------------------------------------------- */
@@ -382,6 +505,27 @@ header {
 .add_serv_inner {
     display: flex;
     gap: 223px;
+    align-items: flex-start;
+}
+
+.sticky-title-column {
+    position: -webkit-sticky;
+    position: sticky;
+    
+    /* Отступ от верха viewport, когда элемент "прилипнет". 
+       Подберите под высоту вашей шапки + небольшой зазор. */
+    top: 100px; 
+    
+    /* Убедимся, что колонка имеет правильную ширину и не схлопывается */
+    flex-shrink: 0; /* Запрещаем колонке сжиматься */
+    width: 447px; /* Используем вашу ширину из min-width */
+}
+
+/* Правая колонка с карточками - здесь ничего особенного не нужно,
+   она будет скроллиться по умолчанию. */
+.scroll-cards-column {
+    /* Этот класс в основном для ясности, но можно добавить стили, если нужно */
+    flex-grow: 1; /* Позволяем ей занимать оставшееся место */
 }
 
 .add_serv_column {
@@ -397,6 +541,11 @@ header {
     font-size: 44px;
     line-height: 1.1;
     text-transform: uppercase;
+}
+
+.add_serv_title > h2:first-child {
+    display: flex;
+    justify-content: space-between;
 }
 
 .add_serv_title_2 {
@@ -450,22 +599,49 @@ header {
     font-size: 32px;
 }
 
+.add_time {
+    opacity: 0.4;
+}
+
+.add_price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A8A6AB;
+    line-height: 1.2;
+}
+
 .add_serv_duration {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.4;
 }
 
-.btn_add_serv {
-    border: 2px solid #F94C23;
-    color: #F94C23;
+.btn_add_serv_cost {
+    border: 2px solid #FFFCFC;
     background-color: transparent;
     padding: 18px 54px;
     white-space: nowrap;
 }
 
+.btn_add_serv_cost:hover {
+    color: #F5F5F7;
+}
+
+.btn_add_serv {
+    border: 2px solid #9E1D21;
+    color: #9E1D21;
+    background-color: transparent;
+    padding: 18px 54px;
+    white-space: nowrap;
+    transition: color background-color 0.2s;
+}
+
+.btn_add_serv:hover {
+    color: #F5F5F7;
+}
+
 /* ------------------------------------------- */
-/* add_services - блок "Преимущества" */
+/* advantages - блок "Преимущества" */
 
 #advantages {
     background-color: #F5F5F7;
@@ -485,8 +661,12 @@ header {
     margin-bottom: 80px;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .advantages_title span {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .advantages_title_2 {
@@ -620,7 +800,7 @@ header {
 }
 
 .big_title span {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .item_big_2 {
@@ -637,8 +817,8 @@ header {
 
 .big_2_2 {
     padding: 12px 20px;
-    background-color: #F94C231A;
-    color: #F94C23E5;
+    background-color: #9E1D211A;
+    color: #9E1D21E5;
     font-weight: 600;
     font-size: 14px;
     line-height: 1;
@@ -647,10 +827,10 @@ header {
 }
 
 .btn_big_adv {
-    border: 2px solid #F94C23;
+    border: 2px solid #9E1D21;
     padding: 12px 20px;
     background-color: transparent;
-    color: #F94C23;
+    color: #9E1D21;
     border-radius: 8px;
 }
 
@@ -738,7 +918,7 @@ header {
 }
 
 .about_us_column p span {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .about_us_text {
@@ -837,14 +1017,14 @@ header {
 }
 
 .about_us_bottom p span {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .about_us_btn {
     padding: 19px 236px;
-    border: 2px solid #F94C23;
+    border: 2px solid #9E1D21;
     background-color: transparent;
-    color: #F94C23;
+    color: #9E1D21;
     white-space: nowrap;
 }
 
@@ -896,7 +1076,7 @@ header {
 .instructions_button_prev,
 .instructions_button_next {
     border-radius: 8px;
-    background-color: #F94C231A;
+    background-color: #9E1D211A;
     padding: 8px;
     transition: opacity 0.3s ease;
 }
@@ -970,7 +1150,7 @@ header {
 .instructor_row_2 {
     display: inline-block;
     align-self: flex-start;
-    background-color: #F94C23;
+    background-color: #9E1D21;
     color: #FFFCFC;
     padding: 6px 13px;
     border-radius: 18px;
@@ -1037,7 +1217,7 @@ header {
 }
 
 .stages_items>p {
-    color: #F94C23;
+    color: #9E1D21;
     font-weight: 600;
     line-height: 1;
     letter-spacing: -1px;
@@ -1142,7 +1322,7 @@ header {
 
 .reviews_title_row p span:first-child,
 .reviews_title_row_2 p span {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .reviews_title_row_2 p span {
@@ -1210,7 +1390,7 @@ header {
 .reviews_button_prev,
 .reviews_button_next {
     border-radius: 8px;
-    background-color: #F94C231A;
+    background-color: #9E1D211A;
     padding: 8px;
     transition: opacity 0.3s ease;
 }
@@ -1269,7 +1449,7 @@ header {
 
 .person_text span {
     font-weight: 500;
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .reviews_date {
@@ -1446,7 +1626,7 @@ textarea:focus {
 }
 
 .form_condition span {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .contacts_info {
@@ -1482,7 +1662,7 @@ textarea:focus {
 
 .contacts_address>p span:last-child,
 .contacts_phones_text>p:last-child {
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .contacts_phones {
@@ -1561,7 +1741,7 @@ textarea:focus {
     padding: 24px 32px 0;
     font-size: 24px;
     font-family: 'Wix Madefor Display';
-    color: #F94C23;
+    color: #9E1D21;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
@@ -1691,9 +1871,9 @@ footer {
 
 .footer_btn_2 {
     padding: 19px 81px;
-    border: 2px solid #F94C23;
+    border: 2px solid #9E1D21;
     background-color: transparent;
-    color: #F94C23;
+    color: #9E1D21;
 }
 
 .footer_info {

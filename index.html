@@ -22,8 +22,7 @@
 
             <div class="header_inner">
 
-                <div class="logo_header"><img src="assets/img/general/logo.svg"
-                        alt="Логотип"></div>
+                <div class="logo_header"><img src="assets/img/general/logo.svg" alt="Логотип"></div>
                 <nav class="nav">
                     <a class="nav_link" href="/">Документы</a>
                     <a class="nav_link" href="/">Процесс обучения</a>
@@ -34,10 +33,8 @@
                 <div class="contacts_header">
                     <p class="title_num_font num_header">+7 (997) 003-41-07</p>
                     <div class="social_net_header">
-                        <a href="/"><img src="assets/img/header/wts_icon.svg"
-                                alt="WhatsApp"></a>
-                        <a href="/"><img src="assets/img/header/tg_icon.svg"
-                                alt="Telegram"></a>
+                        <a href="/"><img src="assets/img/header/wts_icon.svg" alt="WhatsApp"></a>
+                        <a href="/"><img src="assets/img/header/tg_icon.svg" alt="Telegram"></a>
                     </div>
                 </div>
 
@@ -49,12 +46,11 @@
     <section id="hero">
         <div class="container">
 
-            <div class="hero_title"><img src="assets/img/hero/title.svg"
-                    alt="Заголовок"></div>
-            <div class="hero_subtitle">Быстро и без стресса</div>
-            <p class="hero_text">Автошкола М60 — ваш надежный<br>старт в мир уверенного вождения!</p>
+            <div class="hero_title hero-anim-group-1"><img src="assets/img/hero/title.svg" alt="М60 Автошкола"></div>
+            <h1 class="hero-anim-group-1">Быстро и без стресса</h1>
+            <p class="hero_text hero-anim-group-2">Автошкола М60 — ваш надежный<br>старт в мир уверенного вождения!</p>
 
-            <div class="hero_button">
+            <div class="hero_button hero-anim-group-2">
                 <button class="btn_form btn_hero">Оставить заявку</button>
                 <div class="hero_cost">
                     <p class="hero_cost_orange">от 20 990 ₽</p>
@@ -62,33 +58,40 @@
                 </div>
             </div>
 
-            <div class="hero_advantages">
+            <div class="hero-image-composition">
+                <img src="assets/img/hero/hero_img.svg" alt="Автомобиль автошколы" class="hero-car">
+                <img src="assets/img/hero/cone-1.svg" alt="Дорожный конус" class="hero-cone" id="hero-cone-1">
+                <img src="assets/img/hero/cone-2.svg" alt="Дорожный конус" class="hero-cone" id="hero-cone-2">
+            </div>
+
+            <div class="hero_advantages hero-anim-group-3">
                 <div class="hero_adv_items">
-                    <div class="hero_adv_item_1">92%</div>
+                    <div class="hero_adv_item_1 count-up" data-value="92" data-suffix="%">0%</div>
                     <div class="hero_adv_item_2">Сдача в ГИБДД</div>
                 </div>
                 <div class="hero_adv_items">
-                    <div class="hero_adv_item_1">98%</div>
+                    <div class="hero_adv_item_1 count-up" data-value="98" data-suffix="%">0%</div>
                     <div class="hero_adv_item_2">Сдача теории</div>
                 </div>
                 <div class="hero_adv_items">
-                    <div class="hero_adv_item_1">75</div>
+                    <div class="hero_adv_item_1 count-up" data-value="75">0</div>
                     <div class="hero_adv_item_2">Автомобилей</div>
                 </div>
                 <div class="hero_adv_items">
-                    <div class="hero_adv_item_1">136</div>
+                    <div class="hero_adv_item_1 count-up" data-value="136">0</div>
                     <div class="hero_adv_item_2">Инструкторов</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="fade-up-container">
         <div class="container">
-            <div class="serv_title">
-                <p>Каждый найдет</p>
-                <p>то, что ему нужно</p>
+            <div class="serv_title fade-up-element">
+                <p class="supertitle mb-32">[ услуги ]</p>
+                <h2>Каждый найдет <br> то, что ему нужно</h2>
             </div>
+
 
             <div class="serv_cards_block">
                 <div class="stackCard">
@@ -101,8 +104,10 @@
 
                             <p class="duration">2,5 месяца</p>
                             <p class="description">Полная программа подготовки от нуля до экзамена в ГИБДД. 134 часа
-                                теории (ПДД, первая помощь) и 56 часов практики на автодроме и городских маршрутах. Наши
-                                инструкторы помогут освоить все элементы вождения и подготовят к сложным ситуациям на
+                                теории (ПДД, первая помощь) и 56 часов практики на автодроме и городских маршрутах.
+                                Наши
+                                инструкторы помогут освоить все элементы вождения и подготовят к сложным ситуациям
+                                на
                                 дороге. Гибкий график, рассрочка платежа, сопровождение на экзамен.</p>
                             <p class="date">Набор в группу <span>каждые 15 дней</span></p>
                         </div>
@@ -120,18 +125,18 @@
                         <div class="info_block">
                             <p class="info_title">Для кого:</p>
                             <ul class="info_list">
-                                <li>Никогда не сидели за рулем</li>
-                                <li>Хотите безопасно получить права</li>
-                                <li>Вам важно сдать экзамен с первого раза</li>
+                                <li><span>·</span> Никогда не сидели за рулем</li>
+                                <li><span>·</span> Хотите безопасно получить права</li>
+                                <li><span>·</span> Вам важно сдать экзамен с первого раза</li>
                             </ul>
                         </div>
 
                         <div class="info_block">
                             <p class="info_title">Форматы обучения:</p>
                             <ul class="info_list">
-                                <li>Занятия в классе 3 раза в неделю</li>
-                                <li>Онлайн-доступ к материалам</li>
-                                <li>Тесты после каждой темы</li>
+                                <li><span>·</span> Занятия в классе 3 раза в неделю</li>
+                                <li><span>·</span> Онлайн-доступ к материалам</li>
+                                <li><span>·</span> Тесты после каждой темы</li>
                             </ul>
                         </div>
 
@@ -157,8 +162,10 @@
 
                             <p class="duration">2,5 месяца</p>
                             <p class="description">Полная программа подготовки от нуля до экзамена в ГИБДД. 134 часа
-                                теории (ПДД, первая помощь) и 56 часов практики на автодроме и городских маршрутах. Наши
-                                инструкторы помогут освоить все элементы вождения и подготовят к сложным ситуациям на
+                                теории (ПДД, первая помощь) и 56 часов практики на автодроме и городских маршрутах.
+                                Наши
+                                инструкторы помогут освоить все элементы вождения и подготовят к сложным ситуациям
+                                на
                                 дороге. Гибкий график, рассрочка платежа, сопровождение на экзамен.</p>
                             <p class="date">Набор в группу <span>каждые 15 дней</span></p>
                         </div>
@@ -176,18 +183,18 @@
                         <div class="info_block">
                             <p class="info_title">Для кого:</p>
                             <ul class="info_list">
-                                <li>Никогда не сидели за рулем</li>
-                                <li>Хотите безопасно получить права</li>
-                                <li>Вам важно сдать экзамен с первого раза</li>
+                                <li><span>·</span> Никогда не сидели за рулем</li>
+                                <li><span>·</span> Хотите безопасно получить права</li>
+                                <li><span>·</span> Вам важно сдать экзамен с первого раза</li>
                             </ul>
                         </div>
 
                         <div class="info_block">
                             <p class="info_title">Форматы обучения:</p>
                             <ul class="info_list">
-                                <li>Занятия в классе 3 раза в неделю</li>
-                                <li>Онлайн-доступ к материалам</li>
-                                <li>Тесты после каждой темы</li>
+                                <li><span>·</span> Занятия в классе 3 раза в неделю</li>
+                                <li><span>·</span> Онлайн-доступ к материалам</li>
+                                <li><span>·</span> Тесты после каждой темы</li>
                             </ul>
                         </div>
 
@@ -213,8 +220,10 @@
 
                             <p class="duration">2,5 месяца</p>
                             <p class="description">Полная программа подготовки от нуля до экзамена в ГИБДД. 134 часа
-                                теории (ПДД, первая помощь) и 56 часов практики на автодроме и городских маршрутах. Наши
-                                инструкторы помогут освоить все элементы вождения и подготовят к сложным ситуациям на
+                                теории (ПДД, первая помощь) и 56 часов практики на автодроме и городских маршрутах.
+                                Наши
+                                инструкторы помогут освоить все элементы вождения и подготовят к сложным ситуациям
+                                на
                                 дороге. Гибкий график, рассрочка платежа, сопровождение на экзамен.</p>
                             <p class="date">Набор в группу <span>каждые 15 дней</span></p>
                         </div>
@@ -232,18 +241,18 @@
                         <div class="info_block">
                             <p class="info_title">Для кого:</p>
                             <ul class="info_list">
-                                <li>Никогда не сидели за рулем</li>
-                                <li>Хотите безопасно получить права</li>
-                                <li>Вам важно сдать экзамен с первого раза</li>
+                                <li><span>·</span> Никогда не сидели за рулем</li>
+                                <li><span>·</span> Хотите безопасно получить права</li>
+                                <li><span>·</span> Вам важно сдать экзамен с первого раза</li>
                             </ul>
                         </div>
 
                         <div class="info_block">
                             <p class="info_title">Форматы обучения:</p>
                             <ul class="info_list">
-                                <li>Занятия в классе 3 раза в неделю</li>
-                                <li>Онлайн-доступ к материалам</li>
-                                <li>Тесты после каждой темы</li>
+                                <li><span>·</span> Занятия в классе 3 раза в неделю</li>
+                                <li><span>·</span> Онлайн-доступ к материалам</li>
+                                <li><span>·</span> Тесты после каждой темы</li>
                             </ul>
                         </div>
 
@@ -267,16 +276,16 @@
         <div class="container">
 
             <div class="add_serv_inner">
-                <div class="add_serv_column">
+                <div class="add_serv_column sticky-title-column">
                     <div class="add_serv_title">
-                        <p>Если вам</p>
+                        <h2 class="fw-600 fs-44">Если вам <span class="supertitle">[ доп. услуги ]</span></h2>
                         <div class="add_serv_title_2">
-                            <p>Нужно что-то</p>
-                            <p>Персональное</p>
+                            <h2 class="fw-600 fs-44">Нужно что-то</h2>
+                            <h2 class="fw-600 fs-44">Персональное</h2>
                         </div>
                     </div>
                 </div>
-                <div class="add_serv_column">
+                <div class="add_serv_column scroll-cards-column">
                     <div class="add_serv_card">
                         <div class="add_serv_card_column">
                             <p class="add_serv_desc">Подготовка к пересдаче в ГИБДД</p>
@@ -292,16 +301,33 @@
                         </div>
                     </div>
 
-                    <div class="add_serv_card">
+                    <div class="accent-color add_serv_card">
                         <div class="add_serv_card_column">
-                            <p class="add_serv_desc">Подготовка к пересдаче в ГИБДД</p>
-                            <p class="add_serv_text">2 часа практики на маршруте экзамена. Разбор типичных ошибок.
-                                Аренда автомобиля автошколы для экзамена.</p>
+                            <p class="add_serv_desc">Дополнительные часы вождения</p>
+                            <p class="add_serv_text">Если вам нужно больше практики перед экзаменом или вы хотите
+                                улучшить навыки вождения.</p>
                         </div>
                         <div class="add_serv_card_column">
                             <div class="add_serv_card_row">
-                                <p class="add_serv_cost">5 000 ₽</p>
-                                <p class="add_serv_duration">17 июня повышение: 6 000 ₽</p>
+                                <div class="df-start">
+                                    <p class="add_serv_cost">1 200 ₽<span class="add_time">/час</span></p>
+                                    <img src="assets/img/add_services/stock_icon.svg" alt="">
+                                </div>
+                                <p class="add_serv_duration">17 июня повышение: 1 400 ₽/час</p>
+                            </div>
+                            <button class="btn_form btn_add_serv_cost">Узнать подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="add_serv_card">
+                        <div class="add_serv_card_column">
+                            <p class="add_serv_desc">Индивидуальный экспресс-курс</p>
+                            <p class="add_serv_text">Персональное обучение по ускоренной программе (теория + 30 часов
+                                практики).</p>
+                        </div>
+                        <div class="add_serv_card_column">
+                            <div class="add_serv_card_row">
+                                <p class="add_serv_cost df-end"><span class="add_price">Цена:</span> 5 000 ₽</p>
                             </div>
                             <button class="btn_form btn_add_serv">Узнать подробнее</button>
                         </div>
@@ -309,29 +335,14 @@
 
                     <div class="add_serv_card">
                         <div class="add_serv_card_column">
-                            <p class="add_serv_desc">Подготовка к пересдаче в ГИБДД</p>
-                            <p class="add_serv_text">2 часа практики на маршруте экзамена. Разбор типичных ошибок.
-                                Аренда автомобиля автошколы для экзамена.</p>
+                            <p class="add_serv_desc">Сопровождение в ГИБДД без обучения</p>
+                            <p class="add_serv_text">Если вам нужно больше практики перед экзаменом или вы хотите
+                                улучшить навыки вождения.</p>
                         </div>
                         <div class="add_serv_card_column">
                             <div class="add_serv_card_row">
-                                <p class="add_serv_cost">5 000 ₽</p>
-                                <p class="add_serv_duration">17 июня повышение: 6 000 ₽</p>
-                            </div>
-                            <button class="btn_form btn_add_serv">Узнать подробнее</button>
-                        </div>
-                    </div>
-
-                    <div class="add_serv_card">
-                        <div class="add_serv_card_column">
-                            <p class="add_serv_desc">Подготовка к пересдаче в ГИБДД</p>
-                            <p class="add_serv_text">2 часа практики на маршруте экзамена. Разбор типичных ошибок.
-                                Аренда автомобиля автошколы для экзамена.</p>
-                        </div>
-                        <div class="add_serv_card_column">
-                            <div class="add_serv_card_row">
-                                <p class="add_serv_cost">5 000 ₽</p>
-                                <p class="add_serv_duration">17 июня повышение: 6 000 ₽</p>
+                                <p class="add_serv_cost">10 000 ₽</p>
+                                <p class="add_serv_duration">17 июня повышение: 11 000 ₽</p>
                             </div>
                             <button class="btn_form btn_add_serv">Узнать подробнее</button>
                         </div>
@@ -346,7 +357,8 @@
         <div class="container">
 
             <div class="advantages_title">
-                <p>Почему <span>98%</span> наших учеников</p>
+                <p class="no-wrap">Почему <span class="count-up" data-value="98" data-suffix="%">0%</span> наших
+                    учеников</p>
                 <div class="advantages_title_2">
                     <p>Сдают экзамен</p>
                     <p>С первого раза</p>
@@ -355,19 +367,17 @@
 
             <div class="adv_column">
                 <div class="adv_row">
-                    <div class="adv_item_small adv_item_small_gap_1">
+                    <div class="adv_item_small adv_item_small_gap_1 magnetic-item">
                         <div class="small_top">
-                            <img src="assets/img/advantages/adv_small_top_img_1.svg"
-                                alt="Картинка">
+                            <img src="assets/img/advantages/adv_small_top_img_1.svg" alt="Картинка">
                             <p>Индивидуальный подход</p>
                         </div>
                         <p>Каждый ученик получает столько практики, сколько нужно — без спешки и стресса.</p>
                     </div>
-                    <div class="adv_item_img">
-                        <img src="assets/img/advantages/adv_item_img_1.svg"
-                            alt="Картинка">
+                    <div class="adv_item_img magnetic-item">
+                        <img src="assets/img/advantages/adv_item_img_1.svg" alt="Картинка">
                     </div>
-                    <div class="adv_item_big">
+                    <div class="adv_item_big magnetic-item">
                         <div class="item_big_1">
                             <div class="item_big_1_1">
                                 <p class="big_title">Приведи друга — получи <span>скидку 20%</span></p>
@@ -383,26 +393,23 @@
                 </div>
 
                 <div class="adv_row">
-                    <div class="adv_item_small adv_item_small_gap_2">
+                    <div class="adv_item_small adv_item_small_gap_2 magnetic-item">
                         <div class="small_top">
-                            <img src="assets/img/advantages/adv_small_top_img_2.svg"
-                                alt="Картинка">
+                            <img src="assets/img/advantages/adv_small_top_img_2.svg" alt="Картинка">
                             <p>Гибкий график </p>
                         </div>
                         <p>Можно учиться утром, вечером или в выходные — подстроимся под ваш ритм жизни.</p>
                     </div>
-                    <div class="adv_item_video">
+                    <div class="adv_item_video magnetic-item">
                         <div class="adv_video_title">
                             <p>Видео-экскурсия на обучение</p>
                             <p>Познакомьтесь с нашими кабинетами и преподавателями перед началом обучения</p>
                         </div>
-                        <img src="assets/img/advantages/adv_video.svg"
-                            alt="Картинка">
+                        <img src="assets/img/advantages/adv_video.svg" alt="Картинка">
                     </div>
-                    <div class="adv_item_small adv_item_small_gap_2">
+                    <div class="adv_item_small adv_item_small_gap_2 magnetic-item">
                         <div class="small_top">
-                            <img src="assets/img/advantages/adv_small_top_img_3.svg"
-                                alt="Картинка">
+                            <img src="assets/img/advantages/adv_small_top_img_3.svg" alt="Картинка">
                             <p>Поддержка 24/7</p>
                         </div>
                         <p>Поможем разобрать ошибки, подать документы и даже сопроводим в ГИБДД.</p>
@@ -410,7 +417,7 @@
                 </div>
 
                 <div class="adv_row">
-                    <div class="adv_item_big">
+                    <div class="adv_item_big magnetic-item">
                         <div class="item_big_1">
                             <div class="item_big_1_1">
                                 <p class="big_title"><span>Скидка 15%</span> за раннюю запись</p>
@@ -423,17 +430,15 @@
                             <button class="btn_form btn_big_adv">Подробнее</button>
                         </div>
                     </div>
-                    <div class="adv_item_small adv_item_small_gap_1">
+                    <div class="adv_item_small adv_item_small_gap_1 magnetic-item">
                         <div class="small_top">
-                            <img src="assets/img/advantages/adv_small_top_img_4.svg"
-                                alt="Картинка">
+                            <img src="assets/img/advantages/adv_small_top_img_4.svg" alt="Картинка">
                             <p>Опытные инструкторы</p>
                         </div>
                         <p>Наши преподаватели знают все тонкости экзамена в ГИБДД и подготовят вас на 100%</p>
                     </div>
-                    <div class="adv_item_img">
-                        <img src="assets/img/advantages/adv_item_img_2.svg"
-                            alt="Картинка">
+                    <div class="adv_item_img magnetic-item">
+                        <img src="assets/img/advantages/adv_item_img_2.svg" alt="Картинка">
                     </div>
                 </div>
             </div>
@@ -463,11 +468,11 @@
                     <div class="about_us_row">
                         <div class="about_us_advantages">
                             <div class="about_us_adv_items">
-                                <div class="about_us_adv_item_1">3000+</div>
+                                <div class="about_us_adv_item_1 count-up" data-value="3000" data-suffix="+">0+</div>
                                 <div class="about_us_adv_item_2">Выпускников</div>
                             </div>
                             <div class="about_us_adv_items">
-                                <div class="about_us_adv_item_1">98%</div>
+                                <div class="about_us_adv_item_1 count-up" data-value="98" data-suffix="%">0%</div>
                                 <div class="about_us_adv_item_2">Успешной сдачи</div>
                             </div>
                         </div>
@@ -476,11 +481,11 @@
                     <div class="about_us_row">
                         <div class="about_us_advantages">
                             <div class="about_us_adv_items">
-                                <div class="about_us_adv_item_1">60+</div>
+                                <div class="about_us_adv_item_1 count-up" data-value="60" data-suffix="+">0+</div>
                                 <div class="about_us_adv_item_2">Часов практики</div>
                             </div>
                             <div class="about_us_adv_items">
-                                <div class="about_us_adv_item_1">75</div>
+                                <div class="about_us_adv_item_1 count-up" data-value="75">0</div>
                                 <div class="about_us_adv_item_2">Автомобилей</div>
                             </div>
                         </div>
@@ -509,8 +514,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_1.svg"
-                                alt="Инструктор">
+                            <img src="assets/img/instructors/photo_1.svg" alt="Инструктор">
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -529,8 +533,7 @@
 
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_2.svg"
-                                alt="Инструктор">
+                            <img src="assets/img/instructors/photo_2.svg" alt="Инструктор">
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -549,8 +552,7 @@
 
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_1.svg"
-                                alt="Инструктор">
+                            <img src="assets/img/instructors/photo_1.svg" alt="Инструктор">
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -569,8 +571,7 @@
 
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_2.svg"
-                                alt="Инструктор">
+                            <img src="assets/img/instructors/photo_2.svg" alt="Инструктор">
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -588,26 +589,24 @@
                     </div>
                 </div>
                 <div class="instructions_navigation">
-                    <div class="instructions_button_prev"><img
-                            src="assets/img/instructors/prev_btn.svg" alt=""></div>
-                    <div class="instructions_button_next"><img
-                            src="assets/img/instructors/next_btn.svg" alt=""></div>
+                    <div class="instructions_button_prev"><img src="assets/img/instructors/prev_btn.svg" alt=""></div>
+                    <div class="instructions_button_next"><img src="assets/img/instructors/next_btn.svg" alt=""></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="stages">
+    <section id="stages" class="fade-up-container">
         <div class="container">
 
-            <div class="stages_title">
+            <div class="stages_title fade-up-element">
                 <p>От первого</p>
                 <p>занятия до прав –</p>
                 <p>всего шагов</p>
             </div>
 
             <div class="stages_items_block">
-                <div class="stages_items">
+                <div class="stages_items stage-fade-up">
                     <p>[ 01 ]</p>
                     <div class="stages_item">
                         <p>Запись <br> и начало</p>
@@ -617,7 +616,7 @@
                     </div>
                 </div>
 
-                <div class="stages_items">
+                <div class="stages_items stage-fade-up">
                     <p>[ 02 ]</p>
                     <div class="stages_item">
                         <p>Теоретический курс</p>
@@ -626,7 +625,7 @@
                     </div>
                 </div>
 
-                <div class="stages_items">
+                <div class="stages_items stage-fade-up">
                     <p>[ 03 ]</p>
                     <div class="stages_item">
                         <p>Практика <br> автодром</p>
@@ -635,7 +634,7 @@
                     </div>
                 </div>
 
-                <div class="stages_items">
+                <div class="stages_items stage-fade-up">
                     <p>[ 04 ]</p>
                     <div class="stages_item">
                         <p>Практика <br> в городе</p>
@@ -644,7 +643,7 @@
                     </div>
                 </div>
 
-                <div class="stages_items">
+                <div class="stages_items stage-fade-up">
                     <p>[ 05 ]</p>
                     <div class="stages_item">
                         <p>Экзамены</p>
@@ -657,58 +656,51 @@
         </div>
     </section>
 
-    <section id="reviews">
+    <section id="reviews" class="fade-up-container">
         <div class="container">
 
             <div class="reviews_top">
                 <div class="reviews_title">
-                    <div class="reviews_title_row">
-                        <p>Нас рекомендуют <span>94%</span> учеников</p>
+                    <div class="reviews_title_row fade-up-element">
+                        <p>Нас рекомендуют <span class="count-up" data-value="94" data-suffix="%">0%</span> учеников</p>
                         <p>[ отзывы ]</p>
                     </div>
 
                     <div class="reviews_title_row_2">
-                        <p>Средняя оценка: <span>4.9</span> из 5 на основе <span>1270+ отзывов</span></p>
+                        <p class="fade-up-element">Средняя оценка: <span>4.9</span> из 5 на основе <span>1270+
+                                отзывов</span></p>
                         <div class="reviews_services">
                             <div class="reviews_services_items">
                                 <div class="reviews_services_icon serv_icn_1"><img
-                                        src="assets/img/reviews/google_mark.svg"
-                                        alt="Сервис"></div>
+                                        src="assets/img/reviews/google_mark.svg" alt="Сервис"></div>
                                 <div class="reviews_services_mark">
-                                    <img src="assets/img/reviews/star.svg"
-                                        alt="Звезда">
-                                    <p>5.0</p>
+                                    <img src="assets/img/reviews/star.svg" alt="Звезда">
+                                    <p class="fade-up-element">5.0</p>
                                 </div>
                             </div>
 
                             <div class="reviews_services_items">
                                 <div class="reviews_services_icon serv_icn_2"><img
-                                        src="assets/img/reviews/yandex_mark.svg"
-                                        alt="Сервис"></div>
+                                        src="assets/img/reviews/yandex_mark.svg" alt="Сервис"></div>
                                 <div class="reviews_services_mark">
-                                    <img src="assets/img/reviews/star.svg"
-                                        alt="Звезда">
-                                    <p>5.0</p>
+                                    <img src="assets/img/reviews/star.svg" alt="Звезда">
+                                    <p class="fade-up-element">5.0</p>
                                 </div>
                             </div>
 
                             <div class="reviews_services_items">
                                 <div class="reviews_services_icon serv_icn_3"><img
-                                        src="assets/img/reviews/2gis_mark.svg"
-                                        alt="Сервис"></div>
+                                        src="assets/img/reviews/2gis_mark.svg" alt="Сервис"></div>
                                 <div class="reviews_services_mark">
-                                    <img src="assets/img/reviews/star.svg"
-                                        alt="Звезда">
-                                    <p>5.0</p>
+                                    <img src="assets/img/reviews/star.svg" alt="Звезда">
+                                    <p class="fade-up-element">5.0</p>
                                 </div>
                             </div>
                         </div>
                         <div class="reviews_navigation">
-                            <div class="reviews_button_prev"><img
-                                    src="assets/img/instructors/prev_btn.svg" alt="">
+                            <div class="reviews_button_prev"><img src="assets/img/instructors/prev_btn.svg" alt="">
                             </div>
-                            <div class="reviews_button_next"><img
-                                    src="assets/img/instructors/next_btn.svg" alt="">
+                            <div class="reviews_button_next"><img src="assets/img/instructors/next_btn.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -719,132 +711,126 @@
                         <div class="swiper-slide">
                             <div class="reviews_person">
                                 <div class="reviews_person_name">
-                                    <p>Анна Ковальчук</p>
+                                    <p class="fade-up-element">Анна Ковальчук</p>
                                     <div class="person_mark">
-                                        <p>5.0</p>
-                                        <img src="assets/img/reviews/star.svg"
-                                            alt="Звезда">
+                                        <p class="fade-up-element">5.0</p>
+                                        <img src="assets/img/reviews/star.svg" alt="Звезда">
                                     </div>
                                 </div>
-                                <p class="person_text">Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
+                                <p class="person_text fade-up-element">Инструктор объяснял все четко и без нервов,
+                                    экзамен в ГИБДД сдала
                                     без единой ошибки! Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
                                     без единой о... <span>Подробнее</span></p>
                             </div>
 
                             <div class="reviews_date">
-                                <p>15.05.2025</p>
-                                <img src="assets/img/reviews/2gis_rew.svg"
-                                    alt="Сервис">
+                                <p class="fade-up-element">15.05.2025</p>
+                                <img src="assets/img/reviews/2gis_rew.svg" alt="Сервис">
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="reviews_person">
                                 <div class="reviews_person_name">
-                                    <p>Анна Ковальчук</p>
+                                    <p class="fade-up-element">Анна Ковальчук</p>
                                     <div class="person_mark">
-                                        <p>5.0</p>
-                                        <img src="assets/img/reviews/star.svg"
-                                            alt="Звезда">
+                                        <p class="fade-up-element">5.0</p>
+                                        <img src="assets/img/reviews/star.svg" alt="Звезда">
                                     </div>
                                 </div>
-                                <p class="person_text">Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
+                                <p class="person_text fade-up-element">Инструктор объяснял все четко и без нервов,
+                                    экзамен в ГИБДД сдала
                                     без единой ошибки! Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
                                     без единой о... <span>Подробнее</span></p>
                             </div>
 
                             <div class="reviews_date">
-                                <p>15.05.2025</p>
-                                <img src="assets/img/reviews/2gis_rew.svg"
-                                    alt="Сервис">
+                                <p class="fade-up-element">15.05.2025</p>
+                                <img src="assets/img/reviews/2gis_rew.svg" alt="Сервис">
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="reviews_person">
                                 <div class="reviews_person_name">
-                                    <p>Анна Ковальчук</p>
+                                    <p class="fade-up-element">Анна Ковальчук</p>
                                     <div class="person_mark">
-                                        <p>5.0</p>
-                                        <img src="assets/img/reviews/star.svg"
-                                            alt="Звезда">
+                                        <p class="fade-up-element">5.0</p>
+                                        <img src="assets/img/reviews/star.svg" alt="Звезда">
                                     </div>
                                 </div>
-                                <p class="person_text">Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
+                                <p class="person_text fade-up-element">Инструктор объяснял все четко и без нервов,
+                                    экзамен в ГИБДД сдала
                                     без единой ошибки! Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
                                     без единой о... <span>Подробнее</span></p>
                             </div>
 
                             <div class="reviews_date">
-                                <p>15.05.2025</p>
-                                <img src="assets/img/reviews/2gis_rew.svg"
-                                    alt="Сервис">
+                                <p class="fade-up-element">15.05.2025</p>
+                                <img src="assets/img/reviews/2gis_rew.svg" alt="Сервис">
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="reviews_person">
                                 <div class="reviews_person_name">
-                                    <p>Анна Ковальчук</p>
+                                    <p class="fade-up-element">Анна Ковальчук</p>
                                     <div class="person_mark">
-                                        <p>5.0</p>
-                                        <img src="assets/img/reviews/star.svg"
-                                            alt="Звезда">
+                                        <p class="fade-up-element">5.0</p>
+                                        <img src="assets/img/reviews/star.svg" alt="Звезда">
                                     </div>
                                 </div>
-                                <p class="person_text">Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
+                                <p class="person_text fade-up-element">Инструктор объяснял все четко и без нервов,
+                                    экзамен в ГИБДД сдала
                                     без единой ошибки! Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
                                     без единой о... <span>Подробнее</span></p>
                             </div>
 
                             <div class="reviews_date">
-                                <p>15.05.2025</p>
-                                <img src="assets/img/reviews/2gis_rew.svg"
-                                    alt="Сервис">
+                                <p class="fade-up-element">15.05.2025</p>
+                                <img src="assets/img/reviews/2gis_rew.svg" alt="Сервис">
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="reviews_person">
                                 <div class="reviews_person_name">
-                                    <p>Анна Ковальчук</p>
+                                    <p class="fade-up-element">Анна Ковальчук</p>
                                     <div class="person_mark">
-                                        <p>5.0</p>
-                                        <img src="assets/img/reviews/star.svg"
-                                            alt="Звезда">
+                                        <p class="fade-up-element">5.0</p>
+                                        <img src="assets/img/reviews/star.svg" alt="Звезда">
                                     </div>
                                 </div>
-                                <p class="person_text">Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
+                                <p class="person_text fade-up-element">Инструктор объяснял все четко и без нервов,
+                                    экзамен в ГИБДД сдала
                                     без единой ошибки! Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
                                     без единой о... <span>Подробнее</span></p>
                             </div>
 
                             <div class="reviews_date">
-                                <p>15.05.2025</p>
-                                <img src="assets/img/reviews/2gis_rew.svg"
-                                    alt="Сервис">
+                                <p class="fade-up-element">15.05.2025</p>
+                                <img src="assets/img/reviews/2gis_rew.svg" alt="Сервис">
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="reviews_person">
                                 <div class="reviews_person_name">
-                                    <p>Анна Ковальчук</p>
+                                    <p class="fade-up-element">Анна Ковальчук</p>
                                     <div class="person_mark">
-                                        <p>5.0</p>
-                                        <img src="assets/img/reviews/star.svg"
-                                            alt="Звезда">
+                                        <p class="fade-up-element">5.0</p>
+                                        <img src="assets/img/reviews/star.svg" alt="Звезда">
                                     </div>
                                 </div>
-                                <p class="person_text">Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
+                                <p class="person_text fade-up-element">Инструктор объяснял все четко и без нервов,
+                                    экзамен в ГИБДД сдала
                                     без единой ошибки! Инструктор объяснял все четко и без нервов, экзамен в ГИБДД сдала
                                     без единой о... <span>Подробнее</span></p>
                             </div>
 
                             <div class="reviews_date">
-                                <p>15.05.2025</p>
-                                <img src="assets/img/reviews/2gis_rew.svg"
-                                    alt="Сервис">
+                                <p class="fade-up-element">15.05.2025</p>
+                                <img src="assets/img/reviews/2gis_rew.svg" alt="Сервис">
                             </div>
                         </div>
                     </div>
@@ -852,14 +838,12 @@
             </div>
             <div class="reviews_bottom">
                 <p>Или посмотрите короткое видео от учеников:</p>
-                <div class="reviews_video_wrapper">
+                <div class="reviews_video_wrapper video-reveal-grid">
                     <div class="reviews_video_column">
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_1.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_1.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -867,11 +851,9 @@
                         </div>
 
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_2.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_2.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -881,11 +863,9 @@
 
                     <div class="reviews_video_column">
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_3.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_3.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -893,11 +873,9 @@
                         </div>
 
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_4.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_4.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -907,11 +885,9 @@
 
                     <div class="reviews_video_column">
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_5.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_5.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -919,11 +895,9 @@
                         </div>
 
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_6.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_6.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -933,11 +907,9 @@
 
                     <div class="reviews_video_column">
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_7.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_7.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -945,11 +917,9 @@
                         </div>
 
                         <div class="reviews_video_item">
-                            <img class="reviews_video_img"
-                                src="assets/img/reviews/video_8.svg" alt="Видео">
+                            <img class="reviews_video_img" src="assets/img/reviews/video_8.svg" alt="Видео">
                             <div class="reviews_video_time">
-                                <img src="assets/img/reviews/video_time.svg"
-                                    alt="Время">
+                                <img src="assets/img/reviews/video_time.svg" alt="Время">
                                 <p>1:24</p>
                             </div>
 
@@ -984,8 +954,7 @@
                                 </div>
                                 <div class="form_dropdown">
                                     <p>Звонок по телефону</p>
-                                    <img src="assets/img/contacts/arrow_down.svg"
-                                        alt="Стрелка">
+                                    <img src="assets/img/contacts/arrow_down.svg" alt="Стрелка">
                                 </div>
                             </div>
                             <div class="form_btn btn_form">Оставить заявку</div>
@@ -1005,12 +974,9 @@
                             </div>
 
                             <div class="contacts_phones_serv">
-                                <img src="assets/img/contacts/tg_icon.svg"
-                                    alt="Telegram">
-                                <img src="assets/img/contacts/wta_icon.svg"
-                                    alt="WhatsApp">
-                                <img src="assets/img/contacts/viber_icon.svg"
-                                    alt="Viber">
+                                <img src="assets/img/contacts/tg_icon.svg" alt="Telegram">
+                                <img src="assets/img/contacts/wta_icon.svg" alt="WhatsApp">
+                                <img src="assets/img/contacts/viber_icon.svg" alt="Viber">
                             </div>
                         </div>
                     </div>
@@ -1037,9 +1003,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header">
                                 <span class="title">Сколько длится обучение на категорию B?</span><span
-                                    class="circle"><img
-                                        src="assets/img/faq/accord_btn.svg"
-                                        alt="Круг"></span>
+                                    class="circle"><img src="assets/img/faq/accord_btn.svg" alt="Круг"></span>
                             </button>
                             <div class="accordion-content">
                                 <p>Полный курс занимает 2,5 месяца (134 часа теории + 56 часов практики). Ускоренный
@@ -1050,8 +1014,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header">
                                 <span class="title">Можно ли учиться без опыта вождения?</span><span class="circle"><img
-                                        src="assets/img/faq/accord_btn.svg"
-                                        alt="Круг"></span>
+                                        src="assets/img/faq/accord_btn.svg" alt="Круг"></span>
                             </button>
                             <div class="accordion-content">
                                 <p>Полный курс занимает 2,5 месяца (134 часа теории + 56 часов практики). Ускоренный
@@ -1062,9 +1025,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header">
                                 <span class="title">Я не сдал экзамен в ГИБДД, что делать?</span><span
-                                    class="circle"><img
-                                        src="assets/img/faq/accord_btn.svg"
-                                        alt="Круг"></span>
+                                    class="circle"><img src="assets/img/faq/accord_btn.svg" alt="Круг"></span>
                             </button>
                             <div class="accordion-content">
                                 <p>Полный курс занимает 2,5 месяца (134 часа теории + 56 часов практики). Ускоренный
@@ -1077,8 +1038,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header">
                                 <span class="title">Какие документы нужны для записи?</span><span class="circle"><img
-                                        src="assets/img/faq/accord_btn.svg"
-                                        alt="Круг"></span>
+                                        src="assets/img/faq/accord_btn.svg" alt="Круг"></span>
                             </button>
                             <div class="accordion-content">
                                 <p>Полный курс занимает 2,5 месяца (134 часа теории + 56 часов практики). Ускоренный
@@ -1089,8 +1049,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header">
                                 <span class="title">Как выбрать инструктора?</span><span class="circle"><img
-                                        src="assets/img/faq/accord_btn.svg"
-                                        alt="Круг"></span>
+                                        src="assets/img/faq/accord_btn.svg" alt="Круг"></span>
                             </button>
                             <div class="accordion-content">
                                 <p>Полный курс занимает 2,5 месяца (134 часа теории + 56 часов практики). Ускоренный
@@ -1101,9 +1060,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header">
                                 <span class="title">Есть ли занятия в выходные или вечером?</span><span
-                                    class="circle"><img
-                                        src="assets/img/faq/accord_btn.svg"
-                                        alt="Круг"></span>
+                                    class="circle"><img src="assets/img/faq/accord_btn.svg" alt="Круг"></span>
                             </button>
                             <div class="accordion-content">
                                 <p>Полный курс занимает 2,5 месяца (134 часа теории + 56 часов практики). Ускоренный
@@ -1121,8 +1078,7 @@
         <div class="container">
             <div class="footer_top">
 
-                <div class="logo_footer"><img src="assets/img/general/logo.svg"
-                        alt="Логотип"></div>
+                <div class="logo_footer"><img src="assets/img/general/logo.svg" alt="Логотип"></div>
                 <nav class="nav">
                     <a class="nav_link" href="/">Документы</a>
                     <a class="nav_link" href="/">Процесс обучения</a>
@@ -1139,34 +1095,29 @@
                     <div class="footer_rev">
                         <div class="footer_rev_item">
                             <div class="footer_mark">
-                                <img src="assets/img/footer/star_icon.svg"
-                                    alt="Звезда">
+                                <img src="assets/img/footer/star_icon.svg" alt="Звезда">
                                 <p>5.0</p>
                             </div>
 
-                            <img src="assets/img/footer/google_icon.svg"
-                                alt="Google">
+                            <img src="assets/img/footer/google_icon.svg" alt="Google">
 
                             <p>Google</p>
                         </div>
 
                         <div class="footer_rev_item">
                             <div class="footer_mark">
-                                <img src="assets/img/footer/star_icon.svg"
-                                    alt="Звезда">
+                                <img src="assets/img/footer/star_icon.svg" alt="Звезда">
                                 <p>5.0</p>
                             </div>
 
-                            <img src="assets/img/footer/yandex_icon.svg"
-                                alt="Yandex">
+                            <img src="assets/img/footer/yandex_icon.svg" alt="Yandex">
 
                             <p>Яндекс</p>
                         </div>
 
                         <div class="footer_rev_item">
                             <div class="footer_mark">
-                                <img src="assets/img/footer/star_icon.svg"
-                                    alt="Звезда">
+                                <img src="assets/img/footer/star_icon.svg" alt="Звезда">
                                 <p>5.0</p>
                             </div>
 
@@ -1194,12 +1145,9 @@
                         </div>
 
                         <div class="contacts_phones_serv">
-                            <img src="assets/img/contacts/tg_icon.svg"
-                                alt="Telegram">
-                            <img src="assets/img/contacts/wta_icon.svg"
-                                alt="WhatsApp">
-                            <img src="assets/img/contacts/viber_icon.svg"
-                                alt="Viber">
+                            <img src="assets/img/contacts/tg_icon.svg" alt="Telegram">
+                            <img src="assets/img/contacts/wta_icon.svg" alt="WhatsApp">
+                            <img src="assets/img/contacts/viber_icon.svg" alt="Viber">
                         </div>
                     </div>
                 </div>
@@ -1219,14 +1167,18 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
-    <script src="assets/js/serv_cards_slider.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/hero_fade_up.js"></script>
+    <script src="assets/js/fade_up.js"></script>
+    <script src="assets/js/header_shadow.js"></script>
+    <script src="assets/js/count_up.js"></script>
+    <script src="assets/js/serv_cards_slider.js"></script>
+    <script src="assets/js/magnetic_item.js"></script>
+    <script src="assets/js/stage_fade_up.js"></script>
     <script src="assets/js/instructors_slider.js"></script>
     <script src="assets/js/reviews_slider.js"></script>
+    <script src="assets/js/video_fade_up.js"></script>
     <script src="assets/js/faq_accordion.js"></script>
 </body>
 
