@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         opacity: 1,
         y: 0,
         
-        duration: 6.5, // Теперь триггер просто запускает анимацию, поэтому длительность важна
+        duration: 3.5, // Теперь триггер просто запускает анимацию, поэтому длительность важна
         ease: 'power4.out', // Красивая плавная функция для одиночной анимации
         
         scrollTrigger: {

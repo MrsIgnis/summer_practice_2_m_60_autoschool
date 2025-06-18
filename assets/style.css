@@ -188,7 +188,8 @@ header.header--scrolled {
 .hero-anim-group-2,
 .hero-anim-group-3 {
     opacity: 0;
-    transform: translateY(30px); /* Можешь поменять значение для более сильного/слабого "подъема" */
+    transform: translateY(30px);
+    /* Можешь поменять значение для более сильного/слабого "подъема" */
 }
 
 #hero {
@@ -202,21 +203,28 @@ header.header--scrolled {
     position: relative;
 }
 
-.hero-car, .hero-cone {
+.hero-car,
+.hero-cone {
     opacity: 0;
 }
 
 /* Контейнер для всей композиции с машиной и конусами */
 .hero-image-composition {
     position: absolute;
-    top: 200px; /* Подберите точные значения, чтобы соответствовать макету */
+    top: 200px;
+    /* Подберите точные значения, чтобы соответствовать макету */
     left: 520px;
     right: 0;
-    margin: 0 auto; /* Центрируем контейнер */
-    width: 800px; /* Примерная ширина композиции */
-    height: 400px; /* Примерная высота */
-    z-index: 1; /* Убираем картинки за текст */
-    pointer-events: none; /* Чтобы картинки не мешали кликать на текст/кнопки */
+    margin: 0 auto;
+    /* Центрируем контейнер */
+    width: 800px;
+    /* Примерная ширина композиции */
+    height: 400px;
+    /* Примерная высота */
+    z-index: 1;
+    /* Убираем картинки за текст */
+    pointer-events: none;
+    /* Чтобы картинки не мешали кликать на текст/кнопки */
 }
 
 /* Стили для каждой картинки внутри композиции */
@@ -511,21 +519,24 @@ header.header--scrolled {
 .sticky-title-column {
     position: -webkit-sticky;
     position: sticky;
-    
+
     /* Отступ от верха viewport, когда элемент "прилипнет". 
        Подберите под высоту вашей шапки + небольшой зазор. */
-    top: 100px; 
-    
+    top: 100px;
+
     /* Убедимся, что колонка имеет правильную ширину и не схлопывается */
-    flex-shrink: 0; /* Запрещаем колонке сжиматься */
-    width: 447px; /* Используем вашу ширину из min-width */
+    flex-shrink: 0;
+    /* Запрещаем колонке сжиматься */
+    width: 447px;
+    /* Используем вашу ширину из min-width */
 }
 
 /* Правая колонка с карточками - здесь ничего особенного не нужно,
    она будет скроллиться по умолчанию. */
 .scroll-cards-column {
     /* Этот класс в основном для ясности, но можно добавить стили, если нужно */
-    flex-grow: 1; /* Позволяем ей занимать оставшееся место */
+    flex-grow: 1;
+    /* Позволяем ей занимать оставшееся место */
 }
 
 .add_serv_column {
@@ -543,7 +554,7 @@ header.header--scrolled {
     text-transform: uppercase;
 }
 
-.add_serv_title > h2:first-child {
+.add_serv_title>h2:first-child {
     display: flex;
     justify-content: space-between;
 }
@@ -638,6 +649,15 @@ header.header--scrolled {
 
 .btn_add_serv:hover {
     color: #F5F5F7;
+}
+
+.btn_add_serv_2 {
+    white-space: nowrap;
+    transition: color background-color 0.2s;
+    padding: 18px 54px;
+    background-color: transparent !important;
+    color: #F5F5F7 !important;
+    border: 2px solid #F5F5F7 !important;
 }
 
 /* ------------------------------------------- */
@@ -832,6 +852,12 @@ header.header--scrolled {
     background-color: transparent;
     color: #9E1D21;
     border-radius: 8px;
+    transition: background-color color 0.2s;
+}
+
+.btn_big_adv:hover {
+    background-color: #9E1D21;
+    color: #F5F5F7;
 }
 
 .adv_item_video {
@@ -1026,6 +1052,12 @@ header.header--scrolled {
     background-color: transparent;
     color: #9E1D21;
     white-space: nowrap;
+    transition: background-color color 0.2s;
+}
+
+.about_us_btn:hover {
+    background-color: #9E1D21;
+    color: #F5F5F7;
 }
 
 /* ------------------------------------------- */
@@ -1075,9 +1107,6 @@ header.header--scrolled {
 
 .instructions_button_prev,
 .instructions_button_next {
-    border-radius: 8px;
-    background-color: #9E1D211A;
-    padding: 8px;
     transition: opacity 0.3s ease;
 }
 
@@ -1390,8 +1419,6 @@ header.header--scrolled {
 .reviews_button_prev,
 .reviews_button_next {
     border-radius: 8px;
-    background-color: #9E1D211A;
-    padding: 8px;
     transition: opacity 0.3s ease;
 }
 
@@ -1545,6 +1572,11 @@ header.header--scrolled {
     gap: 20px;
 }
 
+.custom-select-wrapper {
+    position: relative;
+    /* Обязательно для позиционирования списка */
+}
+
 .contacts_block {
     display: flex;
     flex-direction: column;
@@ -1587,6 +1619,71 @@ header.header--scrolled {
 .form_dropdown {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* Центрируем стрелку и текст по вертикали */
+    cursor: pointer;
+    /* Показываем, что элемент кликабельный */
+}
+
+/* Плавный поворот для стрелки */
+.form_dropdown img {
+    transition: transform 0.3s ease;
+}
+
+/* Выпадающий список */
+.select-options-list {
+    position: absolute;
+    top: calc(100% + 8px);
+    /* Появляется под полем с отступом 8px */
+    left: 0;
+    width: 100%;
+    background-color: #FFFCFC;
+    /* Такой же фон, как у формы */
+    border-radius: 16px;
+    box-shadow: 0px 8px 30px 0px rgba(13, 11, 26, 0.1);
+    list-style: none;
+    padding: 8px 0;
+    /* Внутренние отступы сверху/снизу */
+    margin: 0;
+    z-index: 10;
+    /* Чтобы список был над другими элементами */
+
+    /* По умолчанию список скрыт и анимирован */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* Стили для одного пункта списка */
+.select-options-list li {
+    padding: 14px 24px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #252533;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Эффект при наведении на пункт списка */
+.select-options-list li:hover {
+    background-color: #F5F5F7;
+    /* Такой же фон, как у инпутов */
+}
+
+/* === СТИЛИ ДЛЯ АКТИВНОГО СОСТОЯНИЯ === */
+
+/* Когда список открыт, добавляем класс is-open к обертке */
+.custom-select-wrapper.is-open .select-options-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Поворачиваем стрелку, когда список открыт */
+.custom-select-wrapper.is-open .form_dropdown img {
+    transform: rotate(180deg);
 }
 
 #form_contacts input::placeholder {
@@ -1673,6 +1770,18 @@ textarea:focus {
 .contacts_phones_serv {
     display: flex;
     gap: 12px;
+}
+
+.contacts_wrapper {
+    background-color: #F6E6E6;
+    border-radius: 16px;
+    padding: 14px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.contacts_wrapper:hover {
+    background-color: #E2BABB;
 }
 
 /* ------------------------------------------- */
@@ -1874,6 +1983,12 @@ footer {
     border: 2px solid #9E1D21;
     background-color: transparent;
     color: #9E1D21;
+    transition: background-color color 0.2s;
+}
+
+.footer_btn_2:hover {
+    background-color: #9E1D21;
+    color: #F5F5F7;
 }
 
 .footer_info {
@@ -1897,4 +2012,595 @@ footer {
     font-weight: 600;
     font-size: 12px;
     color: #25253366;
+}
+
+/* ======================================================= */
+/*                 СТИЛИ ДЛЯ POP-UP ОКНА                   */
+/* ======================================================= */
+
+/* Фон-затемнение (оверлей) */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 11, 26, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* По умолчанию окно ПОЛНОСТЬЮ СКРЫТО */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    /* Хитрость для плавного исчезания */
+}
+
+/* Класс для активного состояния */
+.popup-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;
+}
+
+/* Само модальное окно */
+.popup-modal {
+    max-width: 650px;
+    position: relative;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    display: flex;
+    /* Включаем Flexbox */
+    flex-direction: column;
+    /* Располагаем элементы в колонку (друг под другом) */
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    /* Анимация появления */
+    transform: translateY(20px) scale(0.95);
+    /* Немного сдвигаем вниз */
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease;
+}
+
+.popup-overlay.is-open .popup-modal {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+/* Кнопка "Закрыть" */
+.popup-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 0;
+    /* Убираем лишнюю высоту */
+}
+
+/* Стили для содержимого формы */
+.popup-title {
+    font-family: 'Wix Madefor Display', sans-serif;
+    /* Подберите ваш шрифт */
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #252533;
+}
+
+.popup-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6c757d;
+    /* Серый цвет для подзаголовка */
+    margin-bottom: 32px;
+}
+
+.popup-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.popup-form-content input,
+.popup-form-dropdown {
+    width: 100%;
+    padding: 19px 24px;
+    border-radius: 18px;
+    border: 1px solid transparent;
+    background-color: #F5F5F7;
+    font-size: 16px;
+}
+
+#popup-form input,
+textarea:focus {
+    outline: none;
+}
+
+.popup-form-content input::placeholder {
+    color: #adb5bd;
+}
+
+.popup-form-dropdown {
+    text-align: left;
+    color: #495057;
+    /* Можно добавить стрелочку, как в вашем макете */
+}
+
+/* Кнопка отправки формы */
+.popup-form-content .btn_form {
+    padding: 19px 211px;
+    background-color: #9E1D21;
+    /* Ваш фирменный красный */
+    color: #F5F5F7;
+    border: none;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.popup-form-content .btn_form:hover {
+    background-color: #84181b;
+    /* Чуть темнее при наведении */
+}
+
+.popup-policy {
+    font-size: 14px;
+    color: #7C7B84;
+    margin-top: 8px;
+}
+
+.popup-policy a {
+    color: #9E1D21;
+}
+
+/* Класс для блокировки скролла на странице */
+.body-no-scroll {
+    overflow: hidden;
+}
+
+.pop_up_policy {
+    color: #9E1D21;
+}
+
+/* ======================================================= */
+/*             ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ ОКНА "УСПЕШНО"     */
+/* ======================================================= */
+
+/* Картинка в окне "Успешно" */
+.popup-success-image {
+    /* Можете подобрать размер */
+    margin-bottom: 24px;
+}
+
+/* Специфичные стили для контента в окне "Успешно", если нужны */
+#popup-success .popup-title {
+    font-size: 36px;
+    /* Чуть крупнее, как на макете */
+}
+
+#popup-success .popup-subtitle {
+    margin-bottom: 32px;
+}
+
+/* Кнопка "Вернуться на главную" */
+.popup-success-btn {
+    width: 100%;
+    padding: 19px 52px;
+}
+
+/* ======================================================= */
+/*                 НОВЫЕ СТИЛИ ДЛЯ POP-UP ДЕТАЛЕЙ           */
+/* ======================================================= */
+
+/* Применяем стили только к контенту внутри #popup-details */
+#popup-details .popup-details-content {
+    text-align: left;
+    /* Главное изменение: выравнивание по левому краю */
+}
+
+/* Заголовок */
+#popup-details .popup-details-title {
+    font-size: 28px;
+    /* Можете подобрать размер */
+    font-weight: 700;
+    margin-bottom: 18px;
+    /* Небольшой отступ до подзаголовка */
+    line-height: 1.2;
+    text-transform: none;
+}
+
+.popup-details-description p {
+    font-size: 14px;
+    color: #51505B;
+    font-weight: 400;
+}
+
+/* Новый стиль для подзаголовка */
+.popup-details-subheading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #495057;
+    /* Чуть менее заметный цвет */
+    margin-bottom: 16px;
+}
+
+/* Скрываем его, если он пустой */
+.popup-details-subheading:empty {
+    display: none;
+}
+
+/* Блок с описанием */
+#popup-details .popup-details-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6c757d;
+    margin-bottom: 24px;
+}
+
+/* Стили для маркированного списка внутри описания */
+#popup-details .popup-details-description ul {
+    list-style: none;
+    /* Убираем стандартные маркеры */
+    padding-left: 0;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+#popup-details .popup-details-description li {
+    padding-left: 20px;
+    /* Отступ слева для кастомного маркера */
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Рисуем кастомный маркер-точку */
+#popup-details .popup-details-description li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #252533;
+    /* Ваш фирменный красный цвет */
+    font-size: 20px;
+    line-height: 1;
+}
+
+
+/* Блок с ценами */
+#popup-details .popup-details-price-block {
+    justify-content: flex-start;
+    /* Выравниваем цены по левому краю */
+    text-align: left;
+    margin-bottom: 24px;
+    display: block;
+    /* Чтобы элементы были друг под другом */
+}
+
+#popup-details .popup-details-price {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#popup-details .popup-details-old-price {
+    font-size: 14px;
+    color: #252533;
+    text-decoration: none;
+    /* Убираем зачеркивание для этого поп-апа */
+    margin-top: 4px;
+}
+
+/* Кнопка "Оставить заявку" */
+#popup-details .btn_form {
+    padding: 19px 119px;
+    border-radius: 16px;
+}
+
+#popup-details .popup-modal {
+    max-width: 466px;
+}
+
+/* ======================================================= */
+/*             СТИЛИ ДЛЯ POP-UP ОКНА С ВИДЕО               */
+/* ======================================================= */
+
+/* Модификатор для модального окна видео */
+.popup-modal--video {
+    max-width: 900px;
+    /* Делаем окно шире */
+    width: 90%;
+    background: transparent;
+    /* Убираем белый фон, чтобы не было рамок */
+    padding: 0;
+    /* Убираем внутренние отступы */
+    box-shadow: none;
+    /* Убираем тень */
+}
+
+/* Контейнер для видео */
+.popup-modal--video .video-container {
+    position: relative;
+    width: 100%;
+    /* Поддерживаем соотношение сторон 16:9 */
+    padding-top: 56.25%;
+    background-color: #000;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.popup-modal--video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Стили для кнопки "Закрыть" над видео */
+.popup-close--video {
+    position: absolute;
+    top: -40px;
+    /* Располагаем над видео */
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    /* Полупрозрачный фон для видимости */
+    border-radius: 50%;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.popup-close--video:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+    /* Общие корректировки для мобильной версии */
+    .container {
+        padding-left: 20px;
+        /* Увеличиваем отступ, чтобы было больше воздуха */
+        padding-right: 20px;
+    }
+
+    /* HEADER */
+    .header_inner {
+        padding: 15px 0;
+        /* Меньший вертикальный отступ */
+        justify-content: space-between;
+        /* Логотип слева, гамбургер справа */
+        align-items: center;
+        /* Выравнивание по центру по вертикали */
+    }
+
+    .nav,
+    .contacts_header {
+        display: none;
+        /* Скрываем навигацию и контакты на мобиле */
+        /* Здесь нужно будет добавить HTML-код для кнопки-гамбургера и стили для неё */
+        /* Пример: <button class="hamburger-toggle"></button> */
+    }
+
+    .logo_header img {
+        max-width: 120px;
+        /* Уменьшаем размер логотипа при необходимости */
+    }
+
+    /* HERO SECTION */
+    #hero {
+        padding-top: 20px;
+        /* Уменьшаем внутренние отступы */
+        padding-bottom: 20px;
+        border-radius: 0 0 20px 20px;
+        /* Меньший радиус скругления */
+        box-shadow: none;
+        /* Убираем тень, если она не нужна на мобиле */
+    }
+
+    .hero_title {
+        text-align: center;
+        /* Центрируем изображение заголовка */
+    }
+
+    .hero_title img {
+        max-width: 250px;
+        /* Уменьшаем размер изображения "ПРАВА КАТЕГОРИИ В" */
+        margin: 0 auto;
+        /* Центрируем изображение */
+    }
+
+    h1 {
+        font-size: 28px;
+        /* Меньший размер шрифта для H1 */
+        text-align: center;
+        /* Центрируем текст H1 */
+        margin-top: 20px;
+        /* Уменьшаем отступ */
+        padding-bottom: 15px;
+        /* Добавляем отступ для красной линии под текстом */
+    }
+
+    h1::after {
+        content: url('assets/img/hero/line_subtitle.svg');
+        /* Убедись, что путь снова правильный */
+        position: absolute;
+        /* Позиционируем относительно h1 */
+        display: block;
+        /* Делаем блочным элементом для центрирования */
+        left: 50%;
+        /* Центрируем по горизонтали */
+        transform: translateX(-50%);
+        /* Корректировка для точного центрирования */
+        top: 100%;
+        /* Позиционируем под текстом H1 */
+        width: 100px;
+        /* Ограничиваем ширину линии */
+        height: auto;
+        /* Сохраняем пропорции */
+        margin-top: 5px;
+        /* Небольшой отступ от текста */
+    }
+
+    .hero_text {
+        margin-top: 20px;
+        /* Значительно уменьшаем отступ */
+        font-size: 16px;
+        /* Меньший размер текста */
+        text-align: center;
+        /* Центрируем текст */
+        line-height: 1.3;
+    }
+
+    /* Кнопка и информация о стоимости */
+    .hero_button {
+        flex-direction: column;
+        /* Располагаем элементы вертикально */
+        align-items: center;
+        /* Центрируем их */
+        margin-top: 30px;
+        /* Скорректированный отступ */
+        gap: 10px;
+        /* Уменьшенный отступ между элементами */
+    }
+
+    .btn_hero {
+        width: 100%;
+        /* Кнопка на всю ширину */
+        max-width: 280px;
+        /* Но не более определенной ширины */
+        padding: 15px 30px;
+        /* Корректируем паддинги кнопки */
+    }
+
+    .hero_cost {
+        text-align: center;
+    }
+
+    .hero_cost_orange {
+        font-size: 20px;
+    }
+
+    .hero_cost_text {
+        font-size: 13px;
+    }
+
+    /* Композиция с машиной и конусами */
+    .hero-image-composition {
+        position: relative;
+        /* Самое важное: делаем этот блок обычным, в потоке документа */
+        top: auto;
+        /* Сбрасываем десктопное позиционирование */
+        left: auto;
+        width: 100%;
+        /* Занимаем всю доступную ширину */
+        height: auto;
+        /* Высота подстраивается автоматически */
+        margin-top: 30px;
+        /* Отступ от предыдущего блока */
+        pointer-events: none;
+        /* Чтобы не мешали кликам на текст */
+        overflow: hidden;
+        /* Скрываем части конусов, которые могут выходить за блок */
+        text-align: center;
+        /* Центрируем изображения внутри */
+    }
+
+    .hero-car {
+        position: static;
+        /* Статичное позиционирование внутри родителя */
+        transform: none;
+        /* Сбрасываем трансформации центрирования */
+        max-width: 90%;
+        /* Размер машины для мобильных */
+        margin: 0 auto;
+        /* Центрируем машину */
+    }
+
+    #hero-cone-1 {
+        position: absolute;
+        /* Конусы остаются абсолютно позиционированными ОТНОСИТЕЛЬНО .hero-image-composition */
+        top: 20px;
+        /* Корректируем позицию относительно родителя */
+        left: -50px;
+        /* Сдвигаем влево, чтобы часть была за экраном */
+        max-width: 100px;
+        /* Размер конуса */
+    }
+
+    #hero-cone-2 {
+        position: absolute;
+        top: 100px;
+        /* Корректируем позицию относительно родителя */
+        right: -50px;
+        /* Сдвигаем вправо */
+        max-width: 100px;
+        /* Размер конуса */
+    }
+
+    /* Блок с преимуществами (статистика) */
+    .hero_advantages {
+        display: grid;
+        /* Используем CSS Grid для сетки 2x2 */
+        grid-template-columns: 1fr 1fr;
+        /* Две колонки равной ширины */
+        gap: 0;
+        /* Gap между ячейками будем регулировать через Border */
+        padding: 0;
+        /* Удаляем горизонтальный паддинг, контейнер уже обрабатывает это */
+        margin-top: 40px;
+        /* Скорректированный отступ */
+        border-top: 1px solid #25253352;
+        /* Верхняя граница всей сетки */
+        border-left: 1px solid #25253352;
+        /* Левая граница всей сетки */
+    }
+
+    .hero_adv_items {
+        flex: none;
+        /* Отменяем flex-свойства, так как используем grid */
+        border-right: 1px solid #25253352;
+        /* Правая граница для ячеек */
+        border-bottom: 1px solid #25253352;
+        /* Нижняя граница для ячеек */
+        padding: 20px 0;
+        /* Внутренние отступы для текста внутри ячейки */
+        text-align: center;
+        /* Текст центрирован */
+        position: relative;
+        /* Для возможных будущих эффектов или детальных разделителей */
+    }
+
+    /* Удаляем десктопные псевдоэлементы-разделители, так как теперь используются границы */
+    .hero_adv_items:not(:first-child)::before,
+    .hero_advantages::before,
+    .hero_advantages::after {
+        content: none;
+    }
+
+    .hero_adv_item_1 {
+        font-size: 36px;
+        /* Меньший размер чисел */
+        margin-bottom: 5px;
+        /* Уменьшаем отступ под числом */
+    }
+
+    .hero_adv_item_2 {
+        font-size: 14px;
+        /* Меньший размер текста */
+    }
 }

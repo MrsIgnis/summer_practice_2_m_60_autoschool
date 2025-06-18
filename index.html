@@ -51,7 +51,7 @@
             <p class="hero_text hero-anim-group-2">Автошкола М60 — ваш надежный<br>старт в мир уверенного вождения!</p>
 
             <div class="hero_button hero-anim-group-2">
-                <button class="btn_form btn_hero">Оставить заявку</button>
+                <button class="btn_form btn_hero js-open-popup">Оставить заявку</button>
                 <div class="hero_cost">
                     <p class="hero_cost_orange">от 20 990 ₽</p>
                     <p class="hero_cost_text">«Начинающий водитель»</p>
@@ -115,7 +115,7 @@
                         <div class="card_bottom">
                             <p class="price">от 20 990 ₽</p>
                             <p class="stock_info">17 июня повышение: 25 990 ₽</p>
-                            <button class="btn_left btn_form">Оставить заявку</button>
+                            <button class="btn_left btn_form js-open-popup">Оставить заявку</button>
                         </div>
                     </div>
 
@@ -173,7 +173,7 @@
                         <div class="card_bottom">
                             <p class="price">от 20 990 ₽</p>
                             <p class="stock_info">17 июня повышение: 25 990 ₽</p>
-                            <button class="btn_left btn_form">Оставить заявку</button>
+                            <button class="btn_left btn_form js-open-popup">Оставить заявку</button>
                         </div>
                     </div>
 
@@ -231,7 +231,7 @@
                         <div class="card_bottom">
                             <p class="price">от 20 990 ₽</p>
                             <p class="stock_info">17 июня повышение: 25 990 ₽</p>
-                            <button class="btn_left btn_form">Оставить заявку</button>
+                            <button class="btn_left btn_form js-open-popup">Оставить заявку</button>
                         </div>
                     </div>
 
@@ -297,7 +297,15 @@
                                 <p class="add_serv_cost">5 000 ₽</p>
                                 <p class="add_serv_duration">17 июня повышение: 6 000 ₽</p>
                             </div>
-                            <button class="btn_form btn_add_serv">Узнать подробнее</button>
+                            <button class="btn_form btn_add_serv js-open-details btn_details"
+                                data-service-title="Сопровождение в ГИБДД без обучения" data-service-description="<p>Если вам нужно больше практики перед экзаменом или вы хотите улучшить навыки вождения.</p>
+                                <ul>
+                                    <li>Если вам нужно больше практики перед экзаменом или вы хотите улучшить навыки вождения.</li>
+                                    <li>Если вам нужно больше практики перед экзаменом или вы хотите улучшить навыки вождения.</li>
+                                    <li>Если вам нужно больше практики перед экзаменом или вы хотите улучшить навыки вождения.</li>
+                                </ul>" data-service-price="5 000 ₽"
+                                data-service-old-price="17 июня повышение: 6 000 ₽">
+                                Узнать подробнее</button>
                         </div>
                     </div>
 
@@ -315,7 +323,7 @@
                                 </div>
                                 <p class="add_serv_duration">17 июня повышение: 1 400 ₽/час</p>
                             </div>
-                            <button class="btn_form btn_add_serv_cost">Узнать подробнее</button>
+                            <button class="btn_form btn_add_serv_cost js-open-details">Узнать подробнее</button>
                         </div>
                     </div>
 
@@ -329,7 +337,7 @@
                             <div class="add_serv_card_row">
                                 <p class="add_serv_cost df-end"><span class="add_price">Цена:</span> 5 000 ₽</p>
                             </div>
-                            <button class="btn_form btn_add_serv">Узнать подробнее</button>
+                            <button class="btn_form btn_add_serv js-open-details">Узнать подробнее</button>
                         </div>
                     </div>
 
@@ -344,7 +352,7 @@
                                 <p class="add_serv_cost">10 000 ₽</p>
                                 <p class="add_serv_duration">17 июня повышение: 11 000 ₽</p>
                             </div>
-                            <button class="btn_form btn_add_serv">Узнать подробнее</button>
+                            <button class="btn_form btn_add_serv js-open-details">Узнать подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -840,7 +848,7 @@
                 <p>Или посмотрите короткое видео от учеников:</p>
                 <div class="reviews_video_wrapper video-reveal-grid">
                     <div class="reviews_video_column">
-                        <div class="reviews_video_item">
+                        <div class="reviews_video_item js-open-video">
                             <img class="reviews_video_img" src="assets/img/reviews/video_1.svg" alt="Видео">
                             <div class="reviews_video_time">
                                 <img src="assets/img/reviews/video_time.svg" alt="Время">
@@ -952,12 +960,27 @@
                                 <div class="form_phone">
                                     <input type="text" placeholder="+7 (___) ___ - __ - __">
                                 </div>
-                                <div class="form_dropdown">
-                                    <p>Звонок по телефону</p>
-                                    <img src="assets/img/contacts/arrow_down.svg" alt="Стрелка">
+                                <div class="custom-select-wrapper">
+                                    <!-- Скрытое поле, которое будет отправляться с формой -->
+                                    <input type="hidden" name="contact_method" id="contact-method-input"
+                                        value="phone_call">
+
+                                    <!-- Видимая часть, которая открывает список (твой .form_dropdown) -->
+                                    <div class="form_dropdown" tabindex="0">
+                                        <!-- tabindex="0" делает div "фокусируемым" -->
+                                        <p id="selected-contact-method">Звонок по телефону</p>
+                                        <img src="assets/img/contacts/arrow_down.svg" alt="Стрелка">
+                                    </div>
+
+                                    <!-- Сам выпадающий список (скрыт по умолчанию) -->
+                                    <ul class="select-options-list">
+                                        <li data-value="phone_call">Звонок по телефону</li>
+                                        <li data-value="whatsapp">Написать в WhatsApp</li>
+                                        <li data-value="telegram">Написать в Telegram</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="form_btn btn_form">Оставить заявку</div>
+                            <button type="submit" class="form_btn btn_form">Оставить заявку</button>
                             <p class="form_condition">Нажимая на кнопку, вы соглашаетесь с <span>Политикой
                                     конфиденциальности</span></p>
                         </form>
@@ -974,9 +997,12 @@
                             </div>
 
                             <div class="contacts_phones_serv">
-                                <img src="assets/img/contacts/tg_icon.svg" alt="Telegram">
-                                <img src="assets/img/contacts/wta_icon.svg" alt="WhatsApp">
-                                <img src="assets/img/contacts/viber_icon.svg" alt="Viber">
+                                <div class="contacts_wrapper">
+                                    <img src="assets/img/contacts/tg_icon.svg" alt="Telegram">
+                                </div>
+                                <div class="contacts_wrapper">
+                                    <img src="assets/img/contacts/wta_icon.svg" alt="WhatsApp">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1128,7 +1154,7 @@
                     </div>
 
                     <div class="footer_buttons">
-                        <button class="btn_form footer_btn_1">Оставить заявку</button>
+                        <button class="btn_form footer_btn_1 js-open-popup">Оставить заявку</button>
                         <button class="btn_form footer_btn_2">Бесплатный урок</button>
                     </div>
                 </div>
@@ -1145,9 +1171,15 @@
                         </div>
 
                         <div class="contacts_phones_serv">
-                            <img src="assets/img/contacts/tg_icon.svg" alt="Telegram">
-                            <img src="assets/img/contacts/wta_icon.svg" alt="WhatsApp">
-                            <img src="assets/img/contacts/viber_icon.svg" alt="Viber">
+                            <div class="contacts_wrapper">
+                                <img src="assets/img/contacts/tg_icon.svg" alt="Telegram">
+                            </div>
+                            <div class="contacts_wrapper">
+                                <img src="assets/img/contacts/wta_icon.svg" alt="WhatsApp">
+                            </div>
+                            <div class="contacts_wrapper">
+                                <img src="assets/img/contacts/viber_icon.svg" alt="Viber">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1164,6 +1196,148 @@
         </div>
     </footer>
 
+    <!-- ======================================================= -->
+    <!--                 POP-UP МОДАЛЬНОЕ ОКНО                  -->
+    <!-- ======================================================= -->
+    <div class="popup-overlay" id="popup-form">
+        <div class="popup-modal">
+
+            <!-- Кнопка "Закрыть" (крестик) -->
+            <button class="popup-close" aria-label="Закрыть окно">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <!-- Содержимое формы -->
+            <h2 class="popup-title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+            <p class="popup-subtitle">Оставьте заявку, наш менеджер свяжется с вами в <br>ближайшее время и ответит на
+                все
+                ваши вопросы</p>
+
+            <form class="popup-form-content" id="main-popup-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="+7 (___) ___ - __ - __" required>
+
+                <div class="custom-select-wrapper">
+                    <!-- Скрытое поле для отправки данных -->
+                    <input type="hidden" name="contact_method_popup" value="phone_call">
+
+                    <!-- Видимая часть -->
+                    <div class="form_dropdown" tabindex="0">
+                        <p>Звонок по телефону</p>
+                        <img src="assets/img/contacts/arrow_down.svg" alt="Стрелка">
+                    </div>
+
+                    <!-- Выпадающий список -->
+                    <ul class="select-options-list">
+                        <li data-value="phone_call">Звонок по телефону</li>
+                        <li data-value="whatsapp">Написать в WhatsApp</li>
+                        <li data-value="telegram">Написать в Telegram</li>
+                    </ul>
+                </div>
+
+                <button type="submit" class="btn_form">Оставить заявку</button>
+                <p class="popup-policy">Нажимая на кнопку, вы соглашаетесь с <a href="/policy.html">Политикой
+                        конфиденциальности</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- ======================================================= -->
+    <!--            POP-UP ОКНО "ДЕТАЛИ УСЛУГИ" (ОБНОВЛЕННЫЙ)       -->
+    <!-- ======================================================= -->
+    <div class="popup-overlay" id="popup-details">
+        <div class="popup-modal">
+
+            <button class="popup-close" aria-label="Закрыть окно">
+                <!-- SVG крестика -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <!-- Содержимое будет заполняться динамически -->
+            <div class="popup-details-content">
+                <h2 class="popup-details-title"></h2>
+                <!-- НОВЫЙ ЭЛЕМЕНТ ДЛЯ ПОДЗАГОЛОВКА -->
+                <p class="popup-details-subheading"></p>
+
+                <div class="popup-details-description">
+                    <!-- Сюда будет вставляться основной текст или список -->
+                </div>
+
+                <div class="popup-details-price-block">
+                    <p class="popup-details-price"></p>
+                    <p class="popup-details-old-price"></p>
+                </div>
+
+                <button class="btn_form js-request-from-details">Оставить заявку</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ======================================================= -->
+    <!--             POP-UP ОКНО "УСПЕШНО"                      -->
+    <!-- ======================================================= -->
+    <div class="popup-overlay" id="popup-success">
+        <div class="popup-modal">
+
+            <!-- Кнопка "Закрыть" (крестик) -->
+            <button class="popup-close" aria-label="Закрыть окно">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <!-- Содержимое окна -->
+            <!-- ЗАМЕНИТЕ src на путь к вашей картинке! -->
+            <img src="assets/img/pop_up/car.svg" alt="Заявка успешно отправлена" class="popup-success-image">
+
+            <h2 class="popup-title">УСПЕШНО!</h2>
+            <p class="popup-subtitle">Наша команда уже приступила к работе над вашей <br>заявкой. Мы свяжемся с вами в
+                ближайшее время!</p>
+
+            <button class="btn_form popup-success-btn">Вернуться на главную</button>
+
+        </div>
+    </div>
+
+    <!-- ======================================================= -->
+    <!--             POP-UP ОКНО ДЛЯ ВИДЕО                     -->
+    <!-- ======================================================= -->
+    <div class="popup-overlay" id="popup-video">
+        <div class="popup-modal popup-modal--video">
+
+            <!-- Кнопка "Закрыть" (крестик) -->
+            <button class="popup-close popup-close--video" aria-label="Закрыть окно">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <!-- Контейнер для видео. src будет добавляться через JS -->
+            <div class="video-container">
+                <video src="" controls autoplay muted playsinline></video>
+            </div>
+
+        </div>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
@@ -1172,6 +1346,7 @@
     <script src="assets/js/hero_fade_up.js"></script>
     <script src="assets/js/fade_up.js"></script>
     <script src="assets/js/header_shadow.js"></script>
+    <script src="assets/js/pop_up.js"></script>
     <script src="assets/js/count_up.js"></script>
     <script src="assets/js/serv_cards_slider.js"></script>
     <script src="assets/js/magnetic_item.js"></script>
@@ -1179,6 +1354,7 @@
     <script src="assets/js/instructors_slider.js"></script>
     <script src="assets/js/reviews_slider.js"></script>
     <script src="assets/js/video_fade_up.js"></script>
+    <script src="assets/js/form_dropdown.js"></script>
     <script src="assets/js/faq_accordion.js"></script>
 </body>
 
