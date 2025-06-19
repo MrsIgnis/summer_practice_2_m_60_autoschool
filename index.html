@@ -23,14 +23,19 @@
             <div class="header_inner">
 
                 <div class="logo_header"><img src="assets/img/general/logo.svg" alt="Логотип"></div>
-                <nav class="nav">
+                <button class="burger-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav desktop-nav">
                     <a class="nav_link" href="/">Документы</a>
                     <a class="nav_link" href="/">Процесс обучения</a>
                     <a class="nav_link" href="/">Лицензии</a>
                     <a class="nav_link" href="/">Контакты</a>
                 </nav>
 
-                <div class="contacts_header">
+                <div class="contacts_header desktop-contacts">
                     <p class="title_num_font num_header">+7 (997) 003-41-07</p>
                     <div class="social_net_header">
                         <a href="/"><img src="assets/img/header/wts_icon.svg" alt="WhatsApp"></a>
@@ -41,12 +46,37 @@
             </div>
 
         </div>
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <a class="nav_link" href="/">Документы</a>
+                <a class="nav_link" href="/">Обучение</a>
+                <a class="nav_link" href="/">Лицензии</a>
+                <a class="nav_link" href="/">Контакты</a>
+            </nav>
+            <div class="contacts_header mobile-contacts">
+                <p class="title_num_font num_header">+7 (997) 003-41-07</p>
+                <div class="social_net_header">
+                    <a href="/"><img src="assets/img/header/wts_icon_mobile.svg" alt="WhatsApp"></a>
+                    <a href="/"><img src="assets/img/header/tg_icon_mobile.svg" alt="Telegram"></a>
+                </div>
+            </div>
+            <div class="contacts_address mobile-address">
+                <p>Владивосток, ул. Вольная, д. 15 офис 24</p>
+                <p>Главный офис. <span>Время работы: ежедневно с 11:00 до 21:00</span></p>
+            </div>
+        </div>
+        <div class="overlay"></div>
     </header>
 
     <section id="hero">
         <div class="container">
 
-            <div class="hero_title hero-anim-group-1"><img src="assets/img/hero/title.svg" alt="М60 Автошкола"></div>
+            <div class="hero_title hero-anim-group-1">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/hero/title_mobile.svg">
+                    <img src="assets/img/hero/title.svg" alt="М60 Автошкола">
+                </picture>
+            </div>
             <h1 class="hero-anim-group-1">Быстро и без стресса</h1>
             <p class="hero_text hero-anim-group-2">Автошкола М60 — ваш надежный<br>старт в мир уверенного вождения!</p>
 
@@ -59,9 +89,20 @@
             </div>
 
             <div class="hero-image-composition">
-                <img src="assets/img/hero/hero_img.svg" alt="Автомобиль автошколы" class="hero-car">
-                <img src="assets/img/hero/cone-1.svg" alt="Дорожный конус" class="hero-cone" id="hero-cone-1">
-                <img src="assets/img/hero/cone-2.svg" alt="Дорожный конус" class="hero-cone" id="hero-cone-2">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/hero/hero_img_mobile.svg">
+                    <img src="assets/img/hero/hero_img.svg" alt="Автомобиль автошколы" class="hero-car">
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/hero/cone-1_mobile.svg">
+                    <img src="assets/img/hero/cone-1.svg" alt="Дорожный конус" class="hero-cone" id="hero-cone-1">
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/hero/cone-2_mobile.svg">
+                    <img src="assets/img/hero/cone-2.svg" alt="Дорожный конус" class="hero-cone" id="hero-cone-2">
+                </picture>
             </div>
 
             <div class="hero_advantages hero-anim-group-3">
@@ -89,7 +130,9 @@
         <div class="container">
             <div class="serv_title fade-up-element">
                 <p class="supertitle mb-32">[ услуги ]</p>
-                <h2>Каждый найдет <br> то, что ему нужно</h2>
+                <div class=""></div>
+                <h2 class="desctop_title_br">Каждый найдет <br> то, что ему нужно</h2>
+                <h2 class="mobile_title_br">Каждый <br> найдет то, <br> что ему нужно</h2>
             </div>
 
 
@@ -110,6 +153,8 @@
                                 на
                                 дороге. Гибкий график, рассрочка платежа, сопровождение на экзамен.</p>
                             <p class="date">Набор в группу <span>каждые 15 дней</span></p>
+                            <p class="serv_mobile">Подробнее <span><img src="assets/img/services/arrow_mobile.svg"
+                                        alt=""></span></p>
                         </div>
 
                         <div class="card_bottom">
@@ -168,6 +213,8 @@
                                 на
                                 дороге. Гибкий график, рассрочка платежа, сопровождение на экзамен.</p>
                             <p class="date">Набор в группу <span>каждые 15 дней</span></p>
+                            <p class="serv_mobile">Подробнее <span><img src="assets/img/services/arrow_mobile.svg"
+                                        alt=""></span></p>
                         </div>
 
                         <div class="card_bottom">
@@ -226,6 +273,8 @@
                                 на
                                 дороге. Гибкий график, рассрочка платежа, сопровождение на экзамен.</p>
                             <p class="date">Набор в группу <span>каждые 15 дней</span></p>
+                            <p class="serv_mobile">Подробнее <span><img src="assets/img/services/arrow_mobile.svg"
+                                        alt=""></span></p>
                         </div>
 
                         <div class="card_bottom">
@@ -311,7 +360,9 @@
 
                     <div class="accent-color add_serv_card">
                         <div class="add_serv_card_column">
-                            <p class="add_serv_desc">Дополнительные часы вождения</p>
+                            <p class="add_serv_desc add_serv_desctop">Дополнительные часы вождения</p>
+                            <p class="add_serv_desc add_serv_mobile">Дополнительные часы вождения <span><img
+                                        src="assets/img/add_services/stock_icon.svg" alt=""></span></p>
                             <p class="add_serv_text">Если вам нужно больше практики перед экзаменом или вы хотите
                                 улучшить навыки вождения.</p>
                         </div>
@@ -364,12 +415,23 @@
     <section id="advantages">
         <div class="container">
 
-            <div class="advantages_title">
-                <p class="no-wrap">Почему <span class="count-up" data-value="98" data-suffix="%">0%</span> наших
-                    учеников</p>
+            <div class="advantages_title adv_title_desctop">
+                <h2 class="no-wrap">Почему <span class="count-up" data-value="98" data-suffix="%">0%</span> наших
+                    учеников <span class="supertitle">[ преимущества ]</span></h2>
                 <div class="advantages_title_2">
-                    <p>Сдают экзамен</p>
-                    <p>С первого раза</p>
+                    <h2>Сдают экзамен</h2>
+                    <h2>С первого раза</h2>
+                </div>
+            </div>
+
+            <div class="advantages_title adv_title_mobile">
+                <h2 class="no-wrap">Почему <span class="supertitle">[ преимущества ]</span><br> <span class="count-up"
+                        data-value="98" data-suffix="%">0%</span> наших <br>
+                    <span class="ml-mobile">учеников</span>
+                </h2>
+                <div class="advantages_title_2">
+                    <h2>Сдают</h2>
+                    <h2>С первого раза</h2>
                 </div>
             </div>
 
@@ -383,7 +445,10 @@
                         <p>Каждый ученик получает столько практики, сколько нужно — без спешки и стресса.</p>
                     </div>
                     <div class="adv_item_img magnetic-item">
-                        <img src="assets/img/advantages/adv_item_img_1.svg" alt="Картинка">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="assets/img/advantages/adv_item_img_1_mobile.svg">
+                            <img src="assets/img/advantages/adv_item_img_1.svg" alt="Картинка">
+                        </picture>
                     </div>
                     <div class="adv_item_big magnetic-item">
                         <div class="item_big_1">
@@ -413,7 +478,10 @@
                             <p>Видео-экскурсия на обучение</p>
                             <p>Познакомьтесь с нашими кабинетами и преподавателями перед началом обучения</p>
                         </div>
-                        <img src="assets/img/advantages/adv_video.svg" alt="Картинка">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="assets/img/advantages/adv_video_mobile.svg">
+                            <img src="assets/img/advantages/adv_video.svg" alt="Картинка">
+                        </picture>
                     </div>
                     <div class="adv_item_small adv_item_small_gap_2 magnetic-item">
                         <div class="small_top">
@@ -446,7 +514,10 @@
                         <p>Наши преподаватели знают все тонкости экзамена в ГИБДД и подготовят вас на 100%</p>
                     </div>
                     <div class="adv_item_img magnetic-item">
-                        <img src="assets/img/advantages/adv_item_img_2.svg" alt="Картинка">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="assets/img/advantages/adv_item_img_2_mobile.svg">
+                            <img src="assets/img/advantages/adv_item_img_2.svg" alt="Картинка">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -458,8 +529,12 @@
         <div class="container">
 
             <div class="about_us_title">
-                <p>Немного про</p>
-                <p>Нашу автошколу</p>
+                <p class="supertitle">[ о нас ]</p>
+                <div class="about_us_title_h2">
+                    <h2>Немного</h2>
+                    <h2>про Нашу автошколу</h2>
+                    <h2>автошколу </h2>
+                </div>
             </div>
 
             <div class="about_us_inner">
@@ -522,7 +597,10 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_1.svg" alt="Инструктор">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assets/img/instructors/photo_1_mobile.svg">
+                                <img src="assets/img/instructors/photo_1.svg" alt="Инструктор">
+                            </picture>
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -541,7 +619,10 @@
 
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_2.svg" alt="Инструктор">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assets/img/instructors/photo_1_mobile.svg">
+                                <img src="assets/img/instructors/photo_2.svg" alt="Инструктор">
+                            </picture>
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -560,7 +641,10 @@
 
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_1.svg" alt="Инструктор">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assets/img/instructors/photo_1_mobile.svg">
+                                <img src="assets/img/instructors/photo_1.svg" alt="Инструктор">
+                            </picture>
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -579,7 +663,10 @@
 
                     <div class="swiper-slide">
                         <div class="photo_instructor">
-                            <img src="assets/img/instructors/photo_2.svg" alt="Инструктор">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assets/img/instructors/photo_1_mobile.svg">
+                                <img src="assets/img/instructors/photo_2.svg" alt="Инструктор">
+                            </picture>
                         </div>
                         <div class="about_instructor">
                             <div class="about_instructor_row">
@@ -961,18 +1048,13 @@
                                     <input type="text" placeholder="+7 (___) ___ - __ - __">
                                 </div>
                                 <div class="custom-select-wrapper">
-                                    <!-- Скрытое поле, которое будет отправляться с формой -->
                                     <input type="hidden" name="contact_method" id="contact-method-input"
                                         value="phone_call">
-
-                                    <!-- Видимая часть, которая открывает список (твой .form_dropdown) -->
                                     <div class="form_dropdown" tabindex="0">
-                                        <!-- tabindex="0" делает div "фокусируемым" -->
                                         <p id="selected-contact-method">Звонок по телефону</p>
                                         <img src="assets/img/contacts/arrow_down.svg" alt="Стрелка">
                                     </div>
 
-                                    <!-- Сам выпадающий список (скрыт по умолчанию) -->
                                     <ul class="select-options-list">
                                         <li data-value="phone_call">Звонок по телефону</li>
                                         <li data-value="whatsapp">Написать в WhatsApp</li>
@@ -1008,7 +1090,11 @@
                     </div>
                 </div>
 
-                <img src="assets/img/contacts/car_img.svg" alt="Машина">
+
+                <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/contacts/car_img_mobile.svg">
+                    <img class="contacts_img_car" src="assets/img/contacts/car_img.svg" alt="Машина">
+                </picture>
 
             </div>
         </div>
@@ -1196,13 +1282,9 @@
         </div>
     </footer>
 
-    <!-- ======================================================= -->
-    <!--                 POP-UP МОДАЛЬНОЕ ОКНО                  -->
-    <!-- ======================================================= -->
     <div class="popup-overlay" id="popup-form">
         <div class="popup-modal">
 
-            <!-- Кнопка "Закрыть" (крестик) -->
             <button class="popup-close" aria-label="Закрыть окно">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 6L6 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
@@ -1212,7 +1294,6 @@
                 </svg>
             </button>
 
-            <!-- Содержимое формы -->
             <h2 class="popup-title">ОСТАВЬТЕ ЗАЯВКУ</h2>
             <p class="popup-subtitle">Оставьте заявку, наш менеджер свяжется с вами в <br>ближайшее время и ответит на
                 все
@@ -1223,16 +1304,13 @@
                 <input type="tel" name="phone" placeholder="+7 (___) ___ - __ - __" required>
 
                 <div class="custom-select-wrapper">
-                    <!-- Скрытое поле для отправки данных -->
                     <input type="hidden" name="contact_method_popup" value="phone_call">
 
-                    <!-- Видимая часть -->
                     <div class="form_dropdown" tabindex="0">
                         <p>Звонок по телефону</p>
                         <img src="assets/img/contacts/arrow_down.svg" alt="Стрелка">
                     </div>
 
-                    <!-- Выпадающий список -->
                     <ul class="select-options-list">
                         <li data-value="phone_call">Звонок по телефону</li>
                         <li data-value="whatsapp">Написать в WhatsApp</li>
@@ -1248,14 +1326,10 @@
         </div>
     </div>
 
-    <!-- ======================================================= -->
-    <!--            POP-UP ОКНО "ДЕТАЛИ УСЛУГИ" (ОБНОВЛЕННЫЙ)       -->
-    <!-- ======================================================= -->
     <div class="popup-overlay" id="popup-details">
         <div class="popup-modal">
 
             <button class="popup-close" aria-label="Закрыть окно">
-                <!-- SVG крестика -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 6L6 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -1264,14 +1338,11 @@
                 </svg>
             </button>
 
-            <!-- Содержимое будет заполняться динамически -->
             <div class="popup-details-content">
                 <h2 class="popup-details-title"></h2>
-                <!-- НОВЫЙ ЭЛЕМЕНТ ДЛЯ ПОДЗАГОЛОВКА -->
                 <p class="popup-details-subheading"></p>
 
                 <div class="popup-details-description">
-                    <!-- Сюда будет вставляться основной текст или список -->
                 </div>
 
                 <div class="popup-details-price-block">
@@ -1285,13 +1356,9 @@
         </div>
     </div>
 
-    <!-- ======================================================= -->
-    <!--             POP-UP ОКНО "УСПЕШНО"                      -->
-    <!-- ======================================================= -->
     <div class="popup-overlay" id="popup-success">
         <div class="popup-modal">
 
-            <!-- Кнопка "Закрыть" (крестик) -->
             <button class="popup-close" aria-label="Закрыть окно">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 6L6 18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
@@ -1301,8 +1368,6 @@
                 </svg>
             </button>
 
-            <!-- Содержимое окна -->
-            <!-- ЗАМЕНИТЕ src на путь к вашей картинке! -->
             <img src="assets/img/pop_up/car.svg" alt="Заявка успешно отправлена" class="popup-success-image">
 
             <h2 class="popup-title">УСПЕШНО!</h2>
@@ -1314,13 +1379,9 @@
         </div>
     </div>
 
-    <!-- ======================================================= -->
-    <!--             POP-UP ОКНО ДЛЯ ВИДЕО                     -->
-    <!-- ======================================================= -->
     <div class="popup-overlay" id="popup-video">
         <div class="popup-modal popup-modal--video">
 
-            <!-- Кнопка "Закрыть" (крестик) -->
             <button class="popup-close popup-close--video" aria-label="Закрыть окно">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -1330,7 +1391,6 @@
                 </svg>
             </button>
 
-            <!-- Контейнер для видео. src будет добавляться через JS -->
             <div class="video-container">
                 <video src="" controls autoplay muted playsinline></video>
             </div>
@@ -1343,6 +1403,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script src="assets/js/header_mobile.js"></script>
     <script src="assets/js/hero_fade_up.js"></script>
     <script src="assets/js/fade_up.js"></script>
     <script src="assets/js/header_shadow.js"></script>
